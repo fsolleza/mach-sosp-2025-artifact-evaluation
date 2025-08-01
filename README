@@ -1,0 +1,450 @@
+##############################################
+Documentation for Artifact Evaluation for Loom
+##############################################
+
+This document outlines the steps to replicate the figures in Section 6 of SOSP
+paper #517.
+
+Note to artifact evaluators:
+
+Loom is system name that will be published in SOSP 2025. This will replace SysX
+and Mach; the former used for anonymization and the latter being the system's
+old name. The name change was made to avoid confusion with Mach the Operating
+System.
+
+This repository will still reference the system as Mach. The open source
+repository available after publication will change this name to Loom.
+
+####################
+SYSTEMS INSTALLATION
+####################
+
+Influxdb
+--------
+
+Note:
+
+We use is InfluxDB 1.7 because this is also used by TSM-Bench [18] and has
+higher ingest throughput than newer versions (e.g., InfluxDB 2).
+
+- install go 1.12 or 1.13
+
+$ go install golang.org/dl/go1.12@latest
+$ go1.12 download
+$ go1.12 get github.com/golang/dep/cmd/dep
+
+- setup go path for this install
+
+$ mkdir $HOME/gocodez
+$ export GOPATH=$HOME/gocodez
+
+- pull repo, checkout influxdb 1.7.1
+$ mkdir -p $GOPATH/src/github.com/influxdata
+$ cd $GOPATH/src/github.com/influxdata
+$ git clone https://github.com/influxdata/influxdb.git
+$ git checkout tags/v1.7.10
+
+- You need to run this command to do dependency stuff ¯\_(ツ)_/¯
+
+$ dep ensure
+
+- install to $HOME/gocodez/bin/influxd. Make sure your gopath is defined
+  correctly
+
+$ export GOPATH=$HOME/gocodez
+$ go1.12 install ./...
+
+- Configurations are found in `influx.conf`
+
+Python for figures
+------------------
+
+- See the figures directory for Python requirements
+
+####
+Data
+####
+
+Evaluation requires replaying recorded high-frequency telemetry. You can
+download these telemetry here:
+
+
+
+#################
+Evaluation output
+#################
+
+Relevant output are tee'd to files in the evaluation-output directory. The names
+of these files are important since the parsing script looks for these files to
+generate tables and figures. You can see a some existing logs in this directory.
+Running the commands below will replace these files.
+
+########################################
+End to end evaluations (Figs 10, 11, 12)
+########################################
+
+- Update paths in the Makefile
+
+- build all relevant applications for end to end workload
+
+$ make e2e-build
+
+- The workload runs in two applications:
+	1) the observability application
+	2) the replaying application that replays data and sends it to the
+	   observability application
+  The two applications run at the same time. First run the observability
+  application, then in another terminal (e.g., via tmux), run the replace
+  application.
+
+Running Mach
+------------
+
+- Running the Mach application for RocksDB Phase 1. Note the paths in the
+  makefile. To run phase 2, replace rocksdb-p1 with rocksdb-p2.
+
+$ make e2e-mach-app QUERY=rocksdb-p1
+
+- Running the RocksDB Phase 1 workload. Queries run 5x so run replay for at
+  least 800 seconds. Parameter is set with `REPLAY_DURATION=800`. See below for
+  how to interpret the replay output.
+
+$ make rocksdb-p1 REPLAY_DURATION=800
+
+Running InfluxDB
+----------------
+
+- For InfluxDB, you will also need to run the InfluxDB storage engine (in yet
+  another terminal). You should kill and restart this process for every phase.
+
+$ make influxd
+
+- Then you can run the influxdb app. InfluxDB is slow and will drop most of the
+  data so the influx-app-complete make command is configured so that all data
+  are written into influx. Data are replayed into a queue and then the app will
+  wait until the data are completely loaded. This means that for high rate
+  phases (e.g., phases 2 and 3 for both workloads), the replay ends before the
+  query fires. You could be waiting for several minutes.
+
+$ make e2e-influx-app QUERY=rocksdb-p1
+
+- Then you can run the replay (same command as in Mach)
+
+$ make rocksdb-p1 REPLAY_DURATION=800
+
+- Since InfluxDB takes a while, we only execute the query once.
+
+Running Fishstore
+-----------------
+
+- Fishstore follows the same pattern as Mach
+
+$ make e2e-fishstore-app QUERY=rocksdb-p1
+
+- Fishstore uses a different makefile command (note the command
+  rocksdb-fishstore-p1)
+
+$ make rocksdb-fishstore-p1 REPLAY_DURATION=800
+
+Redis workload and other phases
+-------------------------------
+
+- Redis was forked into ValKey due to license issues. We use ValKey. Replace
+  `rocksdb' with `valkey' to run the corresponding Redis workload for example,
+  for Redis Workload Phase 1 for Mach and InfluxDB, use the command:
+
+$ make valkey-p1 REPLAY_DURATION=800
+
+  To do the same for Fishstore:
+
+$ make valkey-fishstore-p1 REPLAY_DURATION=800
+
+- To execute other phases, replace p1 with the appropriate phase (i.e., p2 or
+  p3). You need to replace both the monitoring application command and the
+  replay command. For example, to run fishstore with RocksDB workload Phase 2:
+
+$ make e2e-fishstore-app QUERY=rocksdb-p2
+
+- Then to run the replay for RocksDB workload Phase 2:
+
+$ make rocksdb-fishstore-p2 REPLAY_DURATION=800
+
+Interpretting the output
+------------------------
+
+- The replay application loads and sends data in batches to keep up with
+  real-time timestamps. Its output looks like below. The "Behind" value
+  indicates if the replay application cannot keep up with the true data rate.
+  This should stabilize around zero.
+
+- A monotonically increasing "Behind" value indicates your CPU cannot keep up
+  with generating batches. This is possible but unlikely.
+
+0 Batches Generated: 0, Behind: 0
+1 Batches Generated: 8206, Behind: 12
+2 Batches Generated: 7605, Behind: 16
+3 Batches Generated: 7934, Behind: 17
+4 Batches Generated: 7926, Behind: 17
+5 Batches Generated: 7710, Behind: 20
+6 Batches Generated: 8182, Behind: 11
+7 Batches Generated: 8044, Behind: 17
+8 Batches Generated: 7842, Behind: 18
+9 Batches Generated: 7958, Behind: 0
+10 Batches Generated: 8356, Behind: 22
+11 Batches Generated: 7776, Behind: 15
+12 Batches Generated: 8068, Behind: 16
+13 Batches Generated: 8259, Behind: 22
+14 Batches Generated: 7786, Behind: 24
+15 Batches Generated: 7412, Behind: 15
+16 Batches Generated: 7471, Behind: 15
+17 Batches Generated: 8107, Behind: 20
+18 Batches Generated: 7946, Behind: 1
+19 Batches Generated: 8094, Behind: 35
+20 Batches Generated: 7900, Behind: 0
+21 Batches Generated: 8070, Behind: 0
+22 Batches Generated: 8161, Behind: 0
+
+- The monitoring application (e.g., Mach, InfluxDB, Fishstore) will print out
+  the amount of ingested or dropped data every second.
+
+- For Mach and Fishstore, queries execute 5x, once every 120 seconds. As
+  previously noted, InfluxDB takes too long to ingest and query data so the
+  workload only executes one query.
+
+- Output are also tee'd to the evaluation-logs directory to generate figures
+
+#######################
+Probe Effects (Fig. 13)
+#######################
+
+- The setup runs the RocksDB Phase 3 workload live. It writes and queries
+  RocksDB instance and installs an eBPF probe collecting system calls and
+  page-cache events. Unlike in the replay workload used in the e2e
+  workload, this RocksDB instance in this workload writes to a ramdisk.
+
+- The workload sends data to six end points:
+
+	1) Noop: the workload does nothing to the data it collects. This is the
+	   denomintor in the probe effect calculation.
+	2) File: the workload sends the data over TCP to a process that writes
+	   to a file.
+	3) FishStore-I: the workload sends the data over TCP to a process that
+	   writes to a FishStore which indexes data (the same setup as in the
+	   e2e evaluations).
+	4) FishStore-N: the workload sends the data over TCP to a process that
+	   writes to a FishStore which **does not** index data.
+	5) InfluxDB: the workload sends data over TCP to a process that then
+	   writes it to InfluxDB.
+	6) SysX: the workload sends the data over TCP to a process that
+	   writes to a SysX which indexes data (the same setup as in the
+	   e2e evaluations).
+
+- Mount a ramdisk directory. For example:
+
+$ sudo mkdir /tmp/ramdisk
+$ sudo chmod 777 /tmp/ramdisk
+$ mount -t tmpfs -o size=100G myramdisk /tmp/ramdisk
+
+  After the evaluation, unmount it using:
+
+$ sudo umount /tmp/ramdisk/
+
+- Update the RAMDISK_MOUNT path in the Makefile.
+
+- Build everything. Note that this links zlib so it rebuilds everything that was
+  previously built.
+
+$ make pe-build
+
+The noop baseline
+-----------------
+
+- The noop baseline runs the Rocksdb Phase 3 live workload but does not send
+  data to an endpoint.
+
+$ make pe-rocksdb-noop
+
+- The workload warms up for 15 seconds then runs for about 120 seconds. It
+  prints out statistics every second. At the end of the workload, it prints the
+  average RocksDB query rate.  For example, in the output below, the baseline is
+  5.09 million records per second.
+
+Count: 133 App: 5414912, Syscall: 2390016, Page cache: 0, Count: 7804928, Dropped: 0
+Count: 134 App: 5125120, Syscall: 2325504, Page cache: 0, Count: 7450624, Dropped: 0
+Workload done, saving data
+Batch count: 880753
+Receiver loop exited, doing nothing with data
+Waiting for records receiver to complete
+Workload done, exiting print out
+Average rocksdb rate per sec: 5088399.81
+Done
+
+Running File storage
+--------------------
+
+- Run the monitoring application first, then the Rocksdb workload. For example,
+  to write the rocksdb workload telemetry to a raw file:
+
+$ make pe-file-writer-app
+
+  Then, in another terminal (e.g., using tmux), run the RocksDB workload which
+  sends telemetry data over TCP. NOTE: The OUT_FILE parameter should be correct
+  so that the parsing script can find the right file.
+
+$ make pe-rocksdb OUT_FILE=file-writer
+
+Running Mach
+------------
+
+- To run the Mach endpoint:
+
+$ make pe-mach-app
+
+  And run the rocksdb app:
+
+$ make pe-rocksdb OUT_FILE=mach
+
+  If the target is FishStore (e.g., FishStore-I or FishStore-N), run this
+  command instead
+
+Running Influx
+--------------
+
+- To run the Influx endpoint, you first need to run the Influx server
+
+$ make influxd
+
+  Then, in another terminal (e.g., using tmux), run the the Influx monitoring
+  application.
+
+$ make pe-influx-app
+
+  And run the rocksdb app:
+
+$ make pe-rocksdb OUT_FILE=influx
+
+Running FishStore
+-----------------
+
+- To run the FishStore endpoint with indexing (FishStore-I) see below. Remember
+  you need to run a FishStore-specific workload.
+
+$ make pe-fishstore-app
+
+  And run the rocksdb app:
+
+$ make pe-rocksdb-fishstore OUT_FILE=fishstore
+
+- When the workload application finishes, use ctrl-c to terminate the endpoint
+  application (if it does not terminate).
+
+- To run the FishStore endpoint without indexing (FishStore-N)
+
+$ make pe-fishstore-app-no-index
+
+  And run the rocksdb app:
+
+$ make pe-rocksdb-fishstore OUT_FILE=fishstore-no-index
+
+
+########################
+Ingest Scaling (Fig. 14)
+########################
+
+- The record size parameter and the CPU variation (only for FishStore and
+  RocksDB) are passed as the SIZE=XX and the THREADS=XX respectively. The sizes
+  used are: 8, 64, 256, 1024
+
+- The command runs a 120s workload is run 5x
+
+FishStore
+---------
+
+- The THREADS parameter is set to 1 or 8
+
+$ make is-fishstore SIZE=8 THREADS=1
+
+RocksDB
+-------
+
+- RocksDB tends to have many open files. Use ulimit to increase the number of
+  allowed open files. This is temporary and will only apply to the current
+  terminal.
+
+$ ulimit -n 1048576
+$ make is-rocksdb SIZE=8 THREADS=1
+
+LMDB
+----
+
+- LMDB is singlethreaded so THREADS is not a parameter
+
+$ make is-lmdb SIZE=8
+
+Mach
+----
+
+- Mach is singlethreaded so THREADS is not a parameter
+
+$ make is-mach SIZE=8
+
+##################
+Ablation (Fig. 15)
+##################
+
+- This workload only uses the RocksDB workload phase 2. It loads 120 + lookback
+  seconds worth of data. It then executes a query searching for  key-value
+  operation latency > 80 looking back 20, 60, 120, and 300 seconds in the first
+  120s of data. The lookback seconds and the indexing method are parameters in
+  the make command.
+
+- First, build all then run the monitoring application which will execute the
+  lookback query
+
+$ make ab-build
+$ make ab-mach-app QUERY=ablation-onlytime LOOKBACK=60
+
+- Then, in another terminal, execute the rocksdb-p2 workload
+
+$ make rocksdb-p2 REPLAY_DURATION=800
+
+- The QUERY parameter accepts the following relevant values: ablation-noindex,
+  ablation-onlyrange, ablation-onlytime, ablation-timerange. The relevant
+  LOOKBACK parameters are: 20, 60, 120, 300, and 600
+
+#################################
+FishStore Exact Queries (Fig. 16)
+#################################
+
+- This experiment uses the result from the ablation-timerange workload above. It
+  compares this result with exact indexing from FishStore.
+
+- First, build all then run FishStore. It uses the same fishstore commands as in
+  end to end evaluations.
+
+$ make build-fishstore
+$ make e2e-fishstore-app QUERY=exact-microbenchmark-60
+
+  The QUERY parameter for this workload takes the following variants which
+  correspond to different lookback periods. NOTE: This differs from the figure
+  in the accepted draft which starts at 20 and ends at 300. We are updating the
+  figure in the draft to reflect the new lookbacks.
+
+	* `exact-microbenchmark-60`: 60s
+	* `exact-microbenchmark-120`: 120s
+	* `exact-microbenchmark-300`: 300s
+	* `exact-microbenchmark-600`: 600s
+
+- Then, run the RocksDB Phase 2 workload for FishStore
+
+$ make rocksdb-fishstore-p2 REPLAY_DURATION=800
+
+#################################
+Parse output and generate figures
+#################################
+
+- Output are stored in the evaluation-logs directory. Scripts in the figures
+  directory parse this output and generate data and figures. The command below
+  does both. Figures are stored in figures/figures subdirectory
+
+$ make figures

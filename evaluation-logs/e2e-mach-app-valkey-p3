@@ -1,0 +1,265 @@
+Mach path: "/nvme/data/mach/can_delete/tmp_data/mach_store"
+Initializing Mach
+Queue size: 1024 batches
+Launched listener thread
+Launched ingest thread
+Records received: 0, dropped: 0, total received 0 dropped 0
+Bin_ids for this range index: 12, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 13
+Bin_ids for this range index: 16, [15], 17
+Records received: 3937792, dropped: 0, total received 3937792 dropped 0
+Bin_ids for this range index: 29, [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], 30
+Records received: 66610432, dropped: 0, total received 70548224 dropped 0
+Records received: 61779712, dropped: 0, total received 132327936 dropped 0
+Records received: 54048512, dropped: 0, total received 186376448 dropped 0
+Records received: 52547840, dropped: 0, total received 238924288 dropped 0
+Records received: 51727616, dropped: 0, total received 290651904 dropped 0
+Records received: 50933248, dropped: 0, total received 341585152 dropped 0
+Records received: 52493568, dropped: 0, total received 394078720 dropped 0
+Records received: 48741888, dropped: 0, total received 442820608 dropped 0
+Records received: 49976320, dropped: 0, total received 492796928 dropped 0
+Records received: 49454336, dropped: 0, total received 542251264 dropped 0
+Running query 0
+Records received: 51930368, dropped: 0, total received 594181632 dropped 0
+Valkey P3 Query
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap ids: {26, 23, 20, 30, 27, 24, 21, 28, 25, 22, 19}
+Indexed timestamp: 100317806
+1. Scanned indexes in 895.911149ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 245ns
+Found entry ts < ts: 99550238 < 100317628
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 100314221 index scan max time 100317806
+3. Scanned 231641 unindexed records after last indexed timestamp 936.517217ms
+Source: 0
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap id len: 1
+1. Scanned indexes in 61.307149ms
+Index scan max timestamp: 100317806, requested timestamp: 100317628
+2. Scanned 0 unindexed records after last indexed timestamp 1.846µs
+Scanning 1 data chunks
+3. Scanned 235 records in 1 indexed chunks that may contain a record 2.348992ms
+Index scan result: 1
+Count: 1, ts: 55034654
+Source: 17615343019692007359
+Index spec: min 0 interval 5
+low bin: 16, bins: [15], high bin: 17
+Bitmap id len: 2
+1. Scanned indexes in 20.2273ms
+Index scan max timestamp: 60034682, requested timestamp: 60034654
+2. Scanned 0 unindexed records after last indexed timestamp 1.668µs
+Scanning 57592 data chunks
+Records received: 50651648, dropped: 0, total received 644833280 dropped 0
+Records received: 64834816, dropped: 0, total received 709668096 dropped 0
+Records received: 63006976, dropped: 0, total received 772675072 dropped 0
+Records received: 54427904, dropped: 0, total received 827102976 dropped 0
+3. Scanned 25695557 records in 57592 indexed chunks that may contain a record 40.053327438s
+Index scan result: 25695334
+Count: 25695334
+Query Latency (Maximum Latency Request): 1.896136659s
+Query Latency (TCP Packet scan): 40.073586102s
+Records received: 52277504, dropped: 0, total received 879380480 dropped 0
+Records received: 52010752, dropped: 0, total received 931391232 dropped 0
+New timeline block
+Records received: 50814720, dropped: 0, total received 982205952 dropped 0
+Records received: 52410880, dropped: 0, total received 1034616832 dropped 0
+Records received: 48960256, dropped: 0, total received 1083577088 dropped 0
+Records received: 50027520, dropped: 0, total received 1133604608 dropped 0
+Records received: 49268480, dropped: 0, total received 1182873088 dropped 0
+Records received: 51929600, dropped: 0, total received 1234802688 dropped 0
+Records received: 51739904, dropped: 0, total received 1286542592 dropped 0
+Records received: 62253056, dropped: 0, total received 1348795648 dropped 0
+Records received: 64277248, dropped: 0, total received 1413072896 dropped 0
+Records received: 54779648, dropped: 0, total received 1467852544 dropped 0
+Running query 1
+Valkey P3 Query
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap ids: {26, 23, 20, 30, 27, 24, 21, 28, 25, 22, 19}
+Indexed timestamp: 262730623
+1. Scanned indexes in 282.308939ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 349ns
+Found entry ts < ts: 262393493 < 262730528
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 262727397 index scan max time 262730623
+3. Scanned 652758 unindexed records after last indexed timestamp 552.179561ms
+Source: 0
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap id len: 1
+1. Scanned indexes in 51.211357ms
+Index scan max timestamp: 262730623, requested timestamp: 262730528
+2. Scanned 0 unindexed records after last indexed timestamp 1.784µs
+Scanning 1 data chunks
+3. Scanned 246 records in 1 indexed chunks that may contain a record 4.014987ms
+Index scan result: 1
+Count: 1, ts: 224675541
+Source: 17615343019692007359
+Index spec: min 0 interval 5
+low bin: 16, bins: [15], high bin: 17
+Bitmap id len: 2
+1. Scanned indexes in 19.345317ms
+Index scan max timestamp: 229675641, requested timestamp: 229675541
+2. Scanned 0 unindexed records after last indexed timestamp 1.545µs
+Scanning 55155 data chunks
+Records received: 52023808, dropped: 0, total received 1519876352 dropped 0
+3. Scanned 24656186 records in 55155 indexed chunks that may contain a record 15.800967328s
+Index scan result: 24655589
+Count: 24655589
+Query Latency (Maximum Latency Request): 889.770803ms
+Query Latency (TCP Packet scan): 15.820344935s
+Records received: 52242688, dropped: 0, total received 1572119040 dropped 0
+Records received: 50538240, dropped: 0, total received 1622657280 dropped 0
+Records received: 52556288, dropped: 0, total received 1675213568 dropped 0
+Records received: 49097472, dropped: 0, total received 1724311040 dropped 0
+Records received: 49983744, dropped: 0, total received 1774294784 dropped 0
+Records received: 49133056, dropped: 0, total received 1823427840 dropped 0
+Records received: 51945984, dropped: 0, total received 1875373824 dropped 0
+New timeline block
+Records received: 51673344, dropped: 0, total received 1927047168 dropped 0
+Records received: 61335040, dropped: 0, total received 1988382208 dropped 0
+Records received: 64502016, dropped: 0, total received 2052884224 dropped 0
+Records received: 55624704, dropped: 0, total received 2108508928 dropped 0
+Records received: 51867136, dropped: 0, total received 2160376064 dropped 0
+Running query 2
+Failed copy
+Valkey P3 Query
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap ids: {26, 23, 20, 30, 27, 24, 21, 28, 25, 22, 19}
+Indexed timestamp: 399932179
+Records received: 52420352, dropped: 0, total received 2212796416 dropped 0
+1. Scanned indexes in 347.131374ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 217ns
+Found entry ts < ts: 399904748 < 399931989
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 399932179 index scan max time 399932179
+3. Scanned 640315 unindexed records after last indexed timestamp 417.056653ms
+Source: 0
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap id len: 1
+1. Scanned indexes in 53.72032ms
+Index scan max timestamp: 399932179, requested timestamp: 399931989
+2. Scanned 0 unindexed records after last indexed timestamp 2.28µs
+Scanning 1 data chunks
+3. Scanned 246 records in 1 indexed chunks that may contain a record 243.021µs
+Index scan result: 1
+Count: 1, ts: 345495906
+Source: 17615343019692007359
+Index spec: min 0 interval 5
+low bin: 16, bins: [15], high bin: 17
+Bitmap id len: 2
+1. Scanned indexes in 21.210377ms
+Index scan max timestamp: 350496003, requested timestamp: 350495906
+2. Scanned 0 unindexed records after last indexed timestamp 1.626µs
+Scanning 55154 data chunks
+Records received: 50451968, dropped: 0, total received 2263248384 dropped 0
+3. Scanned 24655556 records in 55154 indexed chunks that may contain a record 15.239954631s
+Index scan result: 24655509
+Count: 24655509
+Query Latency (Maximum Latency Request): 818.201663ms
+Query Latency (TCP Packet scan): 15.261194941s
+Records received: 52629504, dropped: 0, total received 2315877888 dropped 0
+Records received: 49243392, dropped: 0, total received 2365121280 dropped 0
+Records received: 49833216, dropped: 0, total received 2414954496 dropped 0
+Records received: 49177344, dropped: 0, total received 2464131840 dropped 0
+Records received: 51853056, dropped: 0, total received 2515984896 dropped 0
+Records received: 51602688, dropped: 0, total received 2567587584 dropped 0
+Records received: 61110016, dropped: 0, total received 2628697600 dropped 0
+Records received: 63419904, dropped: 0, total received 2692117504 dropped 0
+Records received: 56281088, dropped: 0, total received 2748398592 dropped 0
+Records received: 52285952, dropped: 0, total received 2800684544 dropped 0
+Records received: 52831232, dropped: 0, total received 2853515776 dropped 0
+New timeline block
+Records received: 50270976, dropped: 0, total received 2903786752 dropped 0
+Running query 3
+Failed copy
+Valkey P3 Query
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap ids: {26, 23, 20, 30, 27, 24, 21, 28, 25, 22, 19}
+Indexed timestamp: 536468263
+1. Scanned indexes in 398.296267ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 31ns
+Found entry ts < ts: 536308986 < 536468250
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 536464127 index scan max time 536468263
+3. Scanned 563781 unindexed records after last indexed timestamp 383.925355ms
+Source: 0
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap id len: 1
+1. Scanned indexes in 55.894394ms
+Index scan max timestamp: 536468263, requested timestamp: 536468250
+2. Scanned 0 unindexed records after last indexed timestamp 1.748µs
+Scanning 1 data chunks
+3. Scanned 241 records in 1 indexed chunks that may contain a record 2.267968ms
+Index scan result: 1
+Count: 1, ts: 483162766
+Source: 17615343019692007359
+Index spec: min 0 interval 5
+low bin: 16, bins: [15], high bin: 17
+Bitmap id len: 2
+1. Scanned indexes in 21.834738ms
+Index scan max timestamp: 488162796, requested timestamp: 488162766
+2. Scanned 0 unindexed records after last indexed timestamp 2.024µs
+Scanning 58735 data chunks
+Records received: 52759040, dropped: 0, total received 2956545792 dropped 0
+Records received: 49490944, dropped: 0, total received 3006036736 dropped 0
+3. Scanned 26435840 records in 58735 indexed chunks that may contain a record 15.048004356s
+Index scan result: 26435840
+Count: 26435840
+Query Latency (Maximum Latency Request): 840.435283ms
+Query Latency (TCP Packet scan): 15.06986618s
+Records received: 49505792, dropped: 0, total received 3055542528 dropped 0
+Records received: 49348352, dropped: 0, total received 3104890880 dropped 0
+Records received: 51372544, dropped: 0, total received 3156263424 dropped 0
+Records received: 51850496, dropped: 0, total received 3208113920 dropped 0
+Records received: 59961088, dropped: 0, total received 3268075008 dropped 0
+Records received: 63628544, dropped: 0, total received 3331703552 dropped 0
+Records received: 56265216, dropped: 0, total received 3387968768 dropped 0
+Records received: 53108736, dropped: 0, total received 3441077504 dropped 0
+Records received: 53239808, dropped: 0, total received 3494317312 dropped 0
+Records received: 50117376, dropped: 0, total received 3544434688 dropped 0
+Records received: 52760064, dropped: 0, total received 3597194752 dropped 0
+Records received: 49927168, dropped: 0, total received 3647121920 dropped 0
+Running query 4
+Failed copy
+Valkey P3 Query
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap ids: {26, 23, 20, 30, 27, 24, 21, 28, 25, 22, 19}
+Indexed timestamp: 672864452
+1. Scanned indexes in 422.809876ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 20ns
+Found entry ts < ts: 672165529 < 672864420
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 672864332 index scan max time 672864452
+3. Scanned 233611 unindexed records after last indexed timestamp 151.682015ms
+Source: 0
+Index spec: min 0 interval 40
+low bin: 29, bins: [19, 20, 21, 22, 23, 24, 25, 26, 27, 28], high bin: 30
+Bitmap id len: 1
+1. Scanned indexes in 57.587599ms
+Index scan max timestamp: 672864452, requested timestamp: 672864420
+2. Scanned 0 unindexed records after last indexed timestamp 1.715µs
+Scanning 1 data chunks
+3. Scanned 235 records in 1 indexed chunks that may contain a record 1.817821ms
+Index scan result: 1
+Count: 1, ts: 659136479
+Source: 17615343019692007359
+Index spec: min 0 interval 5
+low bin: 16, bins: [15], high bin: 17
+Bitmap id len: 2
+1. Scanned indexes in 11.633823ms
+Index scan max timestamp: 664136496, requested timestamp: 664136479
+2. Scanned 0 unindexed records after last indexed timestamp 1.604µs
+Scanning 57592 data chunks
+Records received: 48978176, dropped: 0, total received 3696100096 dropped 0
+3. Scanned 25695557 records in 57592 indexed chunks that may contain a record 14.719850235s
+Index scan result: 25695421
+Count: 25695421
+Query Latency (Maximum Latency Request): 633.949198ms
+Query Latency (TCP Packet scan): 14.731523632s

@@ -1,0 +1,141 @@
+Mach path: "/nvme/data/mach/can_delete/tmp_data/mach_store"
+Initializing Mach
+Queue size: 1024 batches
+Launched listener thread
+Launched ingest thread
+Records received: 0, dropped: 0, total received 0 dropped 0
+Bin_ids for this range index: 12, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 13
+Bin_ids for this range index: 25, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 26
+Bin_ids for this range index: 29, [28], 30
+Records received: 33003520, dropped: 0, total received 33003520 dropped 0
+Records received: 81868800, dropped: 0, total received 114872320 dropped 0
+Records received: 81072128, dropped: 0, total received 195944448 dropped 0
+Records received: 76687360, dropped: 0, total received 272631808 dropped 0
+Records received: 79269888, dropped: 0, total received 351901696 dropped 0
+Records received: 78875648, dropped: 0, total received 430777344 dropped 0
+Records received: 78629888, dropped: 0, total received 509407232 dropped 0
+Records received: 77933568, dropped: 0, total received 587340800 dropped 0
+Records received: 79105024, dropped: 0, total received 666445824 dropped 0
+Records received: 79714304, dropped: 0, total received 746160128 dropped 0
+Records received: 80959488, dropped: 0, total received 827119616 dropped 0
+Running query 0
+Records received: 77884416, dropped: 0, total received 905004032 dropped 0
+Index spec: min 0 interval 5
+low bin: 29, bins: [28], high bin: 30
+Bitmap ids: {28, 30}
+Indexed timestamp: 100000450
+1. Scanned indexes in 613.525867ms
+2. Scanned 0 records in 0 indexed chunks that may contain a record 408ns
+Found entry ts < ts: 97169863 < 100000449
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 99988075 index scan max time 100000450
+3. Scanned 21532 unindexed records after last indexed timestamp 9.27354ms
+Page Cache Event Count Query results AggregationU64 { sum: 2290688, count: 2290688, min: 1, max: 1 }
+Query Latency (Page Cache Event Count): 622.834475ms
+Records received: 78156800, dropped: 0, total received 983160832 dropped 0
+New timeline block
+Records received: 81866752, dropped: 0, total received 1065027584 dropped 0
+Records received: 81073152, dropped: 0, total received 1146100736 dropped 0
+Records received: 76686336, dropped: 0, total received 1222787072 dropped 0
+Records received: 79272960, dropped: 0, total received 1302060032 dropped 0
+Records received: 78871552, dropped: 0, total received 1380931584 dropped 0
+Records received: 78638080, dropped: 0, total received 1459569664 dropped 0
+Records received: 77926400, dropped: 0, total received 1537496064 dropped 0
+Records received: 79110144, dropped: 0, total received 1616606208 dropped 0
+Records received: 79711232, dropped: 0, total received 1696317440 dropped 0
+Records received: 80964608, dropped: 0, total received 1777282048 dropped 0
+Records received: 77876224, dropped: 0, total received 1855158272 dropped 0
+Running query 1
+Index spec: min 0 interval 5
+low bin: 29, bins: [28], high bin: 30
+Bitmap ids: {28, 30}
+Indexed timestamp: 220978256
+1. Scanned indexes in 1.289700808s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 176ns
+Found entry ts < ts: 217992988 < 220978193
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 220935194 index scan max time 220978256
+3. Scanned 20544 unindexed records after last indexed timestamp 35.374558ms
+Page Cache Event Count Query results AggregationU64 { sum: 2279424, count: 2279424, min: 1, max: 1 }
+Query Latency (Page Cache Event Count): 1.325110015s
+Records received: 78162944, dropped: 0, total received 1933321216 dropped 0
+Records received: 81860608, dropped: 0, total received 2015181824 dropped 0
+New timeline block
+Records received: 81076224, dropped: 0, total received 2096258048 dropped 0
+Records received: 76685312, dropped: 0, total received 2172943360 dropped 0
+Records received: 79273984, dropped: 0, total received 2252217344 dropped 0
+Records received: 78871552, dropped: 0, total received 2331088896 dropped 0
+Records received: 78640128, dropped: 0, total received 2409729024 dropped 0
+Records received: 77925376, dropped: 0, total received 2487654400 dropped 0
+Records received: 79113216, dropped: 0, total received 2566767616 dropped 0
+Records received: 79710208, dropped: 0, total received 2646477824 dropped 0
+Records received: 80964608, dropped: 0, total received 2727442432 dropped 0
+Records received: 77877248, dropped: 0, total received 2805319680 dropped 0
+Running query 2
+Failed copy
+Index spec: min 0 interval 5
+low bin: 29, bins: [28], high bin: 30
+Bitmap ids: {28, 30}
+Indexed timestamp: 342711194
+1. Scanned indexes in 1.509893235s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 346ns
+Found entry ts < ts: 342390580 < 342710933
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 342693934 index scan max time 342711194
+3. Scanned 124005 unindexed records after last indexed timestamp 156.418822ms
+Page Cache Event Count Query results AggregationU64 { sum: 2276352, count: 2276352, min: 1, max: 1 }
+Query Latency (Page Cache Event Count): 1.666345817s
+Records received: 78161920, dropped: 0, total received 2883481600 dropped 0
+Records received: 81865728, dropped: 0, total received 2965347328 dropped 0
+Records received: 81063936, dropped: 0, total received 3046411264 dropped 0
+New timeline block
+Records received: 76691456, dropped: 0, total received 3123102720 dropped 0
+Records received: 79275008, dropped: 0, total received 3202377728 dropped 0
+Records received: 78869504, dropped: 0, total received 3281247232 dropped 0
+Records received: 78640128, dropped: 0, total received 3359887360 dropped 0
+Records received: 77921280, dropped: 0, total received 3437808640 dropped 0
+Records received: 79116288, dropped: 0, total received 3516924928 dropped 0
+Records received: 79712256, dropped: 0, total received 3596637184 dropped 0
+Records received: 80963584, dropped: 0, total received 3677600768 dropped 0
+Records received: 77876224, dropped: 0, total received 3755476992 dropped 0
+Running query 3
+Failed copy
+Failed copy
+Index spec: min 0 interval 5
+low bin: 29, bins: [28], high bin: 30
+Bitmap ids: {28, 30}
+Indexed timestamp: 464852922
+1. Scanned indexes in 1.773427782s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 364ns
+Found entry ts < ts: 463869800 < 464852881
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 464835117 index scan max time 464852922
+3. Scanned 87177 unindexed records after last indexed timestamp 125.188247ms
+Page Cache Event Count Query results AggregationU64 { sum: 2280448, count: 2280448, min: 1, max: 1 }
+Query Latency (Page Cache Event Count): 1.898653421s
+Records received: 78162944, dropped: 0, total received 3833639936 dropped 0
+Records received: 81863680, dropped: 0, total received 3915503616 dropped 0
+Records received: 81069056, dropped: 0, total received 3996572672 dropped 0
+Records received: 76691456, dropped: 0, total received 4073264128 dropped 0
+Records received: 79270912, dropped: 0, total received 4152535040 dropped 0
+New timeline block
+Records received: 78875648, dropped: 0, total received 4231410688 dropped 0
+Records received: 78636032, dropped: 0, total received 4310046720 dropped 0
+Records received: 77918208, dropped: 0, total received 4387964928 dropped 0
+Records received: 79118336, dropped: 0, total received 4467083264 dropped 0
+Records received: 79716352, dropped: 0, total received 4546799616 dropped 0
+Records received: 80955392, dropped: 0, total received 4627755008 dropped 0
+Records received: 77881344, dropped: 0, total received 4705636352 dropped 0
+Running query 4
+Index spec: min 0 interval 5
+low bin: 29, bins: [28], high bin: 30
+Bitmap ids: {28, 30}
+Indexed timestamp: 587271188
+1. Scanned indexes in 1.079608112s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 345ns
+Found entry ts < ts: 584701987 < 587271110
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 587268666 index scan max time 587271188
+3. Scanned 28845 unindexed records after last indexed timestamp 11.774648ms
+Page Cache Event Count Query results AggregationU64 { sum: 2277376, count: 2277376, min: 1, max: 1 }
+Query Latency (Page Cache Event Count): 1.091417617s

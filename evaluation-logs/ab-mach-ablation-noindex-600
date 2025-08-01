@@ -1,0 +1,202 @@
+Mach path: "/nvme/data/mach/can_delete/tmp_data/mach_store"
+Initializing Mach
+Queue size: 1024 batches
+Launched listener thread
+Launched ingest thread
+Records received: 0, dropped: 0, total received 0 dropped 0
+Bin_ids for this range index: 12, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 13
+Bin_ids for this range index: 25, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 26
+Records received: 37968896, dropped: 0, total received 37968896 dropped 0
+Records received: 80658432, dropped: 0, total received 118627328 dropped 0
+Records received: 80910336, dropped: 0, total received 199537664 dropped 0
+Records received: 76385280, dropped: 0, total received 275922944 dropped 0
+Records received: 78720000, dropped: 0, total received 354642944 dropped 0
+Records received: 78425088, dropped: 0, total received 433068032 dropped 0
+Records received: 78959616, dropped: 0, total received 512027648 dropped 0
+Records received: 76141568, dropped: 0, total received 588169216 dropped 0
+Records received: 77558784, dropped: 0, total received 665728000 dropped 0
+Records received: 79764480, dropped: 0, total received 745492480 dropped 0
+Records received: 79848448, dropped: 0, total received 825340928 dropped 0
+Records received: 79405056, dropped: 0, total received 904745984 dropped 0
+Records received: 79106048, dropped: 0, total received 983852032 dropped 0
+New timeline block
+Records received: 80664576, dropped: 0, total received 1064516608 dropped 0
+Records received: 80908288, dropped: 0, total received 1145424896 dropped 0
+Records received: 76382208, dropped: 0, total received 1221807104 dropped 0
+Records received: 78720000, dropped: 0, total received 1300527104 dropped 0
+Records received: 78429184, dropped: 0, total received 1378956288 dropped 0
+Records received: 78961664, dropped: 0, total received 1457917952 dropped 0
+Records received: 76134400, dropped: 0, total received 1534052352 dropped 0
+Records received: 77562880, dropped: 0, total received 1611615232 dropped 0
+Records received: 79761408, dropped: 0, total received 1691376640 dropped 0
+Records received: 79848448, dropped: 0, total received 1771225088 dropped 0
+Records received: 79407104, dropped: 0, total received 1850632192 dropped 0
+Records received: 79106048, dropped: 0, total received 1929738240 dropped 0
+Records received: 80663552, dropped: 0, total received 2010401792 dropped 0
+New timeline block
+Records received: 80908288, dropped: 0, total received 2091310080 dropped 0
+Records received: 76382208, dropped: 0, total received 2167692288 dropped 0
+Records received: 78723072, dropped: 0, total received 2246415360 dropped 0
+Records received: 78431232, dropped: 0, total received 2324846592 dropped 0
+Records received: 78952448, dropped: 0, total received 2403799040 dropped 0
+Records received: 76136448, dropped: 0, total received 2479935488 dropped 0
+Records received: 77568000, dropped: 0, total received 2557503488 dropped 0
+Records received: 79758336, dropped: 0, total received 2637261824 dropped 0
+Records received: 79849472, dropped: 0, total received 2717111296 dropped 0
+Records received: 79407104, dropped: 0, total received 2796518400 dropped 0
+Records received: 79108096, dropped: 0, total received 2875626496 dropped 0
+Records received: 80661504, dropped: 0, total received 2956288000 dropped 0
+Records received: 80900096, dropped: 0, total received 3037188096 dropped 0
+Records received: 76390400, dropped: 0, total received 3113578496 dropped 0
+New timeline block
+Records received: 78722048, dropped: 0, total received 3192300544 dropped 0
+Records received: 78425088, dropped: 0, total received 3270725632 dropped 0
+Records received: 78955520, dropped: 0, total received 3349681152 dropped 0
+Records received: 76134400, dropped: 1565696, total received 3425815552 dropped 1565696
+Records received: 77573120, dropped: 0, total received 3503388672 dropped 1565696
+Records received: 79757312, dropped: 0, total received 3583145984 dropped 1565696
+Records received: 79851520, dropped: 0, total received 3662997504 dropped 1565696
+Records received: 79403008, dropped: 0, total received 3742400512 dropped 1565696
+Records received: 79107072, dropped: 0, total received 3821507584 dropped 1565696
+Records received: 80661504, dropped: 0, total received 3902169088 dropped 1565696
+Records received: 80899072, dropped: 0, total received 3983068160 dropped 1565696
+Records received: 76393472, dropped: 0, total received 4059461632 dropped 1565696
+Records received: 78724096, dropped: 0, total received 4138185728 dropped 1565696
+New timeline block
+Records received: 78424064, dropped: 1857536, total received 4216609792 dropped 3423232
+Records received: 78955520, dropped: 0, total received 4295565312 dropped 3423232
+Records received: 76139520, dropped: 0, total received 4371704832 dropped 3423232
+Records received: 77564928, dropped: 0, total received 4449269760 dropped 3423232
+Records received: 79760384, dropped: 0, total received 4529030144 dropped 3423232
+Records received: 79851520, dropped: 0, total received 4608881664 dropped 3423232
+Records received: 79398912, dropped: 0, total received 4688280576 dropped 3423232
+Records received: 79110144, dropped: 0, total received 4767390720 dropped 3423232
+Records received: 80661504, dropped: 0, total received 4848052224 dropped 3423232
+Records received: 80898048, dropped: 0, total received 4928950272 dropped 3423232
+Records received: 76395520, dropped: 0, total received 5005345792 dropped 3423232
+Records received: 78726144, dropped: 0, total received 5084071936 dropped 3423232
+Records received: 78425088, dropped: 0, total received 5162497024 dropped 3423232
+New timeline block
+Records received: 78955520, dropped: 0, total received 5241452544 dropped 3423232
+Records received: 76137472, dropped: 0, total received 5317590016 dropped 3423232
+Records received: 77568000, dropped: 0, total received 5395158016 dropped 3423232
+Records received: 79757312, dropped: 0, total received 5474915328 dropped 3423232
+Records received: 79848448, dropped: 0, total received 5554763776 dropped 3423232
+Records received: 79403008, dropped: 0, total received 5634166784 dropped 3423232
+Reader ts: 725000641
+Max ts: 120000641
+Min ts: 641
+Executing ablation no index
+Records received: 38755328, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Failed to read from stream, breaking
+Exiting handler thread
+Exiting ingest thread
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Found first ts in 860.904965707s
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Records received: 0, dropped: 0, total received 5672922112 dropped 3423232
+Scanned items: 485356811
+Done executing in 1019.466107587s, 55407
+Min ts found: 6062139 Max ts fonud: 119878137
+Time TSL chunks read: 0
+Index TSL chunks read: 0
+Data TSLs chunks read: 6188545
+Duraton: 1019.466136808s

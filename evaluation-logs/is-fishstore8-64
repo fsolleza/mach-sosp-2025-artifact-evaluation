@@ -1,0 +1,105 @@
+Successfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Launching 8 ingest threads
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Count: 60296550 in 60.000001 seconds
+Count: 58827518 in 60.000001 seconds
+Count: 58356350 in 60.000001 seconds
+Count: 58407555 in 60.000002 seconds
+Count: 59019974 in 60.000001 seconds
+Count: 59193197 in 60.000001 seconds
+Count: 58789506 in 60.000001 seconds
+Count: 56184778 in 60.000001 seconds
+Result rps: 7817923.800000 bps: 500347123.200000
+Exiting
+Successfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Launching 8 ingest threads
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Count: 75900746 in 60.000002 seconds
+Count: 76184632 in 60.000002 seconds
+Count: 76372832 in 60.000001 seconds
+Count: 74907884 in 60.000001 seconds
+Count: 74077440 in 60.000001 seconds
+Count: 74281591 in 60.000002 seconds
+Count: 76629650 in 60.000001 seconds
+Count: 73883649 in 60.011787 seconds
+Result rps: 10037307.066667 bps: 642387652.266667
+Exiting
+Successfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Launching 8 ingest threads
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Count: 56538639 in 60.000001 seconds
+Count: 58783011 in 60.000001 seconds
+Count: 57054424 in 60.000000 seconds
+Count: 56797057 in 60.000001 seconds
+Count: 56373486 in 60.000001 seconds
+Count: 57656212 in 60.000001 seconds
+Count: 57911884 in 60.000001 seconds
+Count: 54196334 in 60.000001 seconds
+Result rps: 7588517.450000 bps: 485665116.800000
+Exiting
+Successfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Launching 8 ingest threads
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Count: 64006817 in 60.000002 seconds
+Count: 63515415 in 60.000000 seconds
+Count: 63558210 in 60.000001 seconds
+Count: 63606366 in 60.000001 seconds
+Count: 62254810 in 60.000001 seconds
+Count: 64278675 in 60.000001 seconds
+Count: 58800512 in 60.000001 seconds
+Count: 58064182 in 60.000001 seconds
+Result rps: 8301416.450000 bps: 531290652.800000
+Exiting
+Successfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Launching 8 ingest threads
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Running ingest thread for data size 64 for 60.000000 duration
+Count: 67118868 in 60.000002 seconds
+Count: 66111043 in 60.000002 seconds
+Count: 66739010 in 60.000001 seconds
+Count: 67864464 in 60.000002 seconds
+Count: 67071599 in 60.000002 seconds
+Count: 60828839 in 60.000001 seconds
+Count: 67033089 in 60.002767 seconds
+Count: 65269761 in 60.019033 seconds
+Result rps: 8800611.216667 bps: 563239117.866667
+Exiting

@@ -1,0 +1,2 @@
+[build]
+rustflags="-L/home/fsolleza/Repositories/mach-v2/osdi-2025/third-party/zlib -lz"

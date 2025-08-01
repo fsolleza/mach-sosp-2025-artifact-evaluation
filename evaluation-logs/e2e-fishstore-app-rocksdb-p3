@@ -1,0 +1,104 @@
+Initializing Fishstore
+Starting indexingSuccessfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Setup done... beginning writing
+Ingest paused...
+Starting up 8 ingest threads
+Waiting for a connection
+Got a connection
+Handling conn 4
+Sent start signal, beginning to receive data
+Received: 70634496, Written: 70634496, Dropped: 0, total received 70634496 dropped 0
+Received: 81153024, Written: 81153024, Dropped: 0, total received 151787520 dropped 0
+Received: 79640576, Written: 79640576, Dropped: 0, total received 231428096 dropped 0
+Received: 77688832, Written: 77688832, Dropped: 0, total received 309116928 dropped 0
+Received: 80621568, Written: 80621568, Dropped: 0, total received 389738496 dropped 0
+Received: 78553088, Written: 78553088, Dropped: 0, total received 468291584 dropped 0
+Received: 77043712, Written: 77043712, Dropped: 0, total received 545335296 dropped 0
+Received: 78230528, Written: 78230528, Dropped: 0, total received 623565824 dropped 0
+Received: 79735808, Written: 79735808, Dropped: 0, total received 703301632 dropped 0
+Received: 80741376, Written: 80741376, Dropped: 0, total received 784043008 dropped 0
+Received: 81135616, Written: 81135616, Dropped: 0, total received 865178624 dropped 0
+Querying
+Ingest paused...
+Got status: 1
+Finalizing touched 2333696, count 2332672
+Q3 count 2332672
+Done with complete pending
+Query Latency (Page Cache Event Count): 2.056654 secs 
+Received: 64235520, Written: 64235520, Dropped: 0, total received 929414144 dropped 0
+Received: 81156096, Written: 81156096, Dropped: 0, total received 1010570240 dropped 0
+Received: 79637504, Written: 79637504, Dropped: 0, total received 1090207744 dropped 0
+Received: 77689856, Written: 77689856, Dropped: 0, total received 1167897600 dropped 0
+Received: 80623616, Written: 80623616, Dropped: 0, total received 1248521216 dropped 0
+Received: 78546944, Written: 78546944, Dropped: 0, total received 1327068160 dropped 0
+Received: 77042688, Written: 77042688, Dropped: 0, total received 1404110848 dropped 0
+Received: 78236672, Written: 78236672, Dropped: 0, total received 1482347520 dropped 0
+Received: 79737856, Written: 79737856, Dropped: 0, total received 1562085376 dropped 0
+Received: 80741376, Written: 80741376, Dropped: 0, total received 1642826752 dropped 0
+Received: 81139712, Written: 81139712, Dropped: 0, total received 1723966464 dropped 0
+Received: 75387904, Written: 75387904, Dropped: 0, total received 1799354368 dropped 0
+Received: 15972352, Written: 15972352, Dropped: 0, total received 1815326720 dropped 0
+Querying
+Got status: 1
+Finalizing touched 2276352, count 2276352
+Q3 count 2276352
+Done with complete pending
+Query Latency (Page Cache Event Count): 1.949733 secs 
+Received: 47923200, Written: 47923200, Dropped: 0, total received 1863249920 dropped 0
+Received: 79631360, Written: 79631360, Dropped: 0, total received 1942881280 dropped 0
+Received: 77688832, Written: 77688832, Dropped: 0, total received 2020570112 dropped 0
+Received: 80626688, Written: 80626688, Dropped: 0, total received 2101196800 dropped 0
+Received: 78547968, Written: 78547968, Dropped: 0, total received 2179744768 dropped 0
+Received: 77041664, Written: 77041664, Dropped: 0, total received 2256786432 dropped 0
+Received: 78233600, Written: 78233600, Dropped: 0, total received 2335020032 dropped 0
+Received: 79740928, Written: 79740928, Dropped: 0, total received 2414760960 dropped 0
+Received: 80748544, Written: 80748544, Dropped: 0, total received 2495509504 dropped 0
+Received: 81136640, Written: 81136640, Dropped: 0, total received 2576646144 dropped 0
+Received: 75388928, Written: 75388928, Dropped: 0, total received 2652035072 dropped 0
+Received: 80218112, Written: 80218112, Dropped: 0, total received 2732253184 dropped 0
+Received: 33221632, Written: 33221632, Dropped: 0, total received 2765474816 dropped 0
+Querying
+Got status: 1
+Finalizing touched 2319360, count 2317312
+Q3 count 2317312
+Done with complete pending
+Query Latency (Page Cache Event Count): 1.999186 secs 
+Received: 30523392, Written: 30523392, Dropped: 0, total received 2795998208 dropped 0
+Received: 77693952, Written: 77693952, Dropped: 0, total received 2873692160 dropped 0
+Received: 80617472, Written: 80617472, Dropped: 0, total received 2954309632 dropped 0
+Received: 78553088, Written: 78553088, Dropped: 0, total received 3032862720 dropped 0
+Received: 77041664, Written: 77041664, Dropped: 0, total received 3109904384 dropped 0
+Received: 78230528, Written: 78230528, Dropped: 0, total received 3188134912 dropped 0
+Received: 79739904, Written: 79739904, Dropped: 0, total received 3267874816 dropped 0
+Received: 80747520, Written: 80747520, Dropped: 0, total received 3348622336 dropped 0
+Received: 81140736, Written: 81140736, Dropped: 0, total received 3429763072 dropped 0
+Received: 75388928, Written: 75388928, Dropped: 0, total received 3505152000 dropped 0
+Received: 80217088, Written: 80217088, Dropped: 0, total received 3585369088 dropped 0
+Received: 81158144, Written: 81158144, Dropped: 0, total received 3666527232 dropped 0
+Received: 49093632, Written: 49093632, Dropped: 0, total received 3715620864 dropped 0
+Querying
+Got status: 1
+Finalizing touched 2400256, count 2399232
+Q3 count 2399232
+Done with complete pending
+Query Latency (Page Cache Event Count): 1.682535 secs 
+Received: 18539520, Written: 18539520, Dropped: 0, total received 3734160384 dropped 0
+Received: 80617472, Written: 80617472, Dropped: 0, total received 3814777856 dropped 0
+Received: 78555136, Written: 78555136, Dropped: 0, total received 3893332992 dropped 0
+Received: 77037568, Written: 77037568, Dropped: 0, total received 3970370560 dropped 0
+Received: 78232576, Written: 78232576, Dropped: 0, total received 4048603136 dropped 0
+Received: 79733760, Written: 79733760, Dropped: 0, total received 4128336896 dropped 0
+Received: 80749568, Written: 80749568, Dropped: 0, total received 4209086464 dropped 0
+Received: 81139712, Written: 81139712, Dropped: 0, total received 4290226176 dropped 0
+Received: 75386880, Written: 75386880, Dropped: 0, total received 4365613056 dropped 0
+Received: 80225280, Written: 80225280, Dropped: 0, total received 4445838336 dropped 0
+Received: 81156096, Written: 81156096, Dropped: 0, total received 4526994432 dropped 0
+Received: 79626240, Written: 79626240, Dropped: 0, total received 4606620672 dropped 0
+Received: 59148288, Written: 59148288, Dropped: 0, total received 4665768960 dropped 0
+Querying
+Got status: 1
+Finalizing touched 2311168, count 2310144
+Q3 count 2310144
+Done with complete pending
+Query Latency (Page Cache Event Count): 2.087546 secs 

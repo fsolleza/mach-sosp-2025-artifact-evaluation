@@ -1,0 +1,153 @@
+Collect page caches: true
+Attaching page cache
+Event receiver running
+Event receiver running
+Loading DB 0
+Done loading db: 0
+Loading DB 1
+Done loading db: 1
+Loading DB 2
+Done loading db: 2
+Warming up for 15 seconds
+Count: 0 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 1 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 2 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 3 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 4 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 5 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 6 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 7 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 8 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 9 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 10 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 11 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 12 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 13 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 14 App: 0, Syscall: 0, Page cache: 0, Count: 0, Dropped: 0
+Count: 15 App: 3855360, Syscall: 1820672, Page cache: 0, Count: 5676032, Dropped: 0
+Count: 16 App: 5199872, Syscall: 2221056, Page cache: 0, Count: 7420928, Dropped: 0
+Count: 17 App: 5181440, Syscall: 2423808, Page cache: 0, Count: 7605248, Dropped: 0
+Count: 18 App: 5131264, Syscall: 2360320, Page cache: 0, Count: 7491584, Dropped: 0
+Count: 19 App: 5378048, Syscall: 2478080, Page cache: 0, Count: 7856128, Dropped: 0
+Count: 20 App: 5306368, Syscall: 2417664, Page cache: 0, Count: 7724032, Dropped: 0
+Count: 21 App: 5501952, Syscall: 2428928, Page cache: 0, Count: 7930880, Dropped: 0
+Count: 22 App: 5551104, Syscall: 2334720, Page cache: 0, Count: 7885824, Dropped: 0
+Count: 23 App: 5299200, Syscall: 2363392, Page cache: 0, Count: 7662592, Dropped: 0
+Count: 24 App: 4881408, Syscall: 2249728, Page cache: 0, Count: 7131136, Dropped: 0
+Count: 25 App: 4989952, Syscall: 2343936, Page cache: 0, Count: 7333888, Dropped: 0
+Count: 26 App: 5369856, Syscall: 2334720, Page cache: 0, Count: 7704576, Dropped: 0
+Count: 27 App: 5113856, Syscall: 2409472, Page cache: 0, Count: 7523328, Dropped: 0
+Count: 28 App: 5134336, Syscall: 2273280, Page cache: 0, Count: 7407616, Dropped: 0
+Count: 29 App: 5640192, Syscall: 2434048, Page cache: 0, Count: 8074240, Dropped: 0
+Count: 30 App: 5134336, Syscall: 2213888, Page cache: 0, Count: 7348224, Dropped: 0
+Count: 31 App: 5560320, Syscall: 2377728, Page cache: 0, Count: 7938048, Dropped: 0
+Count: 32 App: 5350400, Syscall: 2378752, Page cache: 0, Count: 7729152, Dropped: 0
+Count: 33 App: 4865024, Syscall: 2382848, Page cache: 0, Count: 7247872, Dropped: 0
+Count: 34 App: 4763648, Syscall: 2542592, Page cache: 0, Count: 7306240, Dropped: 0
+Count: 35 App: 5193728, Syscall: 2323456, Page cache: 0, Count: 7517184, Dropped: 0
+Count: 36 App: 5081088, Syscall: 2394112, Page cache: 0, Count: 7475200, Dropped: 0
+Count: 37 App: 5122048, Syscall: 2372608, Page cache: 0, Count: 7494656, Dropped: 0
+Count: 38 App: 5400576, Syscall: 2199552, Page cache: 0, Count: 7600128, Dropped: 0
+Count: 39 App: 5240832, Syscall: 2272256, Page cache: 0, Count: 7513088, Dropped: 0
+Count: 40 App: 4839424, Syscall: 2324480, Page cache: 0, Count: 7163904, Dropped: 0
+Count: 41 App: 5266432, Syscall: 2307072, Page cache: 0, Count: 7573504, Dropped: 0
+Count: 42 App: 5065728, Syscall: 2434048, Page cache: 0, Count: 7499776, Dropped: 0
+Count: 43 App: 4981760, Syscall: 2451456, Page cache: 0, Count: 7433216, Dropped: 0
+Count: 44 App: 4927488, Syscall: 2469888, Page cache: 0, Count: 7397376, Dropped: 0
+Count: 45 App: 5305344, Syscall: 2416640, Page cache: 0, Count: 7721984, Dropped: 0
+Count: 46 App: 4942848, Syscall: 2413568, Page cache: 0, Count: 7356416, Dropped: 0
+Count: 47 App: 5243904, Syscall: 2280448, Page cache: 0, Count: 7524352, Dropped: 0
+Count: 48 App: 5193728, Syscall: 2325504, Page cache: 0, Count: 7519232, Dropped: 0
+Count: 49 App: 5082112, Syscall: 2172928, Page cache: 0, Count: 7255040, Dropped: 0
+Count: 50 App: 4609024, Syscall: 2330624, Page cache: 0, Count: 6939648, Dropped: 0
+Count: 51 App: 4616192, Syscall: 2325504, Page cache: 0, Count: 6941696, Dropped: 0
+Count: 52 App: 5053440, Syscall: 2529280, Page cache: 0, Count: 7582720, Dropped: 0
+Count: 53 App: 4823040, Syscall: 2523136, Page cache: 0, Count: 7346176, Dropped: 0
+Count: 54 App: 4828160, Syscall: 2569216, Page cache: 0, Count: 7397376, Dropped: 0
+Count: 55 App: 5476352, Syscall: 2401280, Page cache: 0, Count: 7877632, Dropped: 0
+Count: 56 App: 5103616, Syscall: 2457600, Page cache: 0, Count: 7561216, Dropped: 0
+Count: 57 App: 5405696, Syscall: 2257920, Page cache: 0, Count: 7663616, Dropped: 0
+Count: 58 App: 5225472, Syscall: 2320384, Page cache: 0, Count: 7545856, Dropped: 0
+Count: 59 App: 5149696, Syscall: 2287616, Page cache: 0, Count: 7437312, Dropped: 0
+Count: 60 App: 4777984, Syscall: 2295808, Page cache: 0, Count: 7073792, Dropped: 0
+Count: 61 App: 4579328, Syscall: 2329600, Page cache: 0, Count: 6908928, Dropped: 0
+Count: 62 App: 5257216, Syscall: 2456576, Page cache: 0, Count: 7713792, Dropped: 0
+Count: 63 App: 5118976, Syscall: 2243584, Page cache: 0, Count: 7362560, Dropped: 0
+Count: 64 App: 4943872, Syscall: 2472960, Page cache: 0, Count: 7416832, Dropped: 0
+Count: 65 App: 5314560, Syscall: 2487296, Page cache: 0, Count: 7801856, Dropped: 0
+Count: 66 App: 4820992, Syscall: 2472960, Page cache: 0, Count: 7293952, Dropped: 0
+Count: 67 App: 5256192, Syscall: 2420736, Page cache: 0, Count: 7676928, Dropped: 0
+Count: 68 App: 5238784, Syscall: 2348032, Page cache: 0, Count: 7586816, Dropped: 0
+Count: 69 App: 4883456, Syscall: 2326528, Page cache: 0, Count: 7209984, Dropped: 0
+Count: 70 App: 5682176, Syscall: 2356224, Page cache: 0, Count: 8038400, Dropped: 0
+Count: 71 App: 5341184, Syscall: 2233344, Page cache: 0, Count: 7574528, Dropped: 0
+Count: 72 App: 5047296, Syscall: 2339840, Page cache: 0, Count: 7387136, Dropped: 0
+Count: 73 App: 4721664, Syscall: 2268160, Page cache: 0, Count: 6989824, Dropped: 0
+Count: 74 App: 4947968, Syscall: 2483200, Page cache: 0, Count: 7431168, Dropped: 0
+Count: 75 App: 5047296, Syscall: 2417664, Page cache: 0, Count: 7464960, Dropped: 0
+Count: 76 App: 4810752, Syscall: 2644992, Page cache: 0, Count: 7455744, Dropped: 0
+Count: 77 App: 5171200, Syscall: 2340864, Page cache: 0, Count: 7512064, Dropped: 0
+Count: 78 App: 5075968, Syscall: 2437120, Page cache: 0, Count: 7513088, Dropped: 0
+Count: 79 App: 5186560, Syscall: 2323456, Page cache: 0, Count: 7510016, Dropped: 0
+Count: 80 App: 5342208, Syscall: 2266112, Page cache: 0, Count: 7608320, Dropped: 0
+Count: 81 App: 5123072, Syscall: 2252800, Page cache: 0, Count: 7375872, Dropped: 0
+Count: 82 App: 4951040, Syscall: 2305024, Page cache: 0, Count: 7256064, Dropped: 0
+Count: 83 App: 4517888, Syscall: 2307072, Page cache: 0, Count: 6824960, Dropped: 0
+Count: 84 App: 4468736, Syscall: 2427904, Page cache: 0, Count: 6896640, Dropped: 0
+Count: 85 App: 5105664, Syscall: 2424832, Page cache: 0, Count: 7530496, Dropped: 0
+Count: 86 App: 4788224, Syscall: 2554880, Page cache: 0, Count: 7343104, Dropped: 0
+Count: 87 App: 4869120, Syscall: 2586624, Page cache: 0, Count: 7455744, Dropped: 0
+Count: 88 App: 5116928, Syscall: 2328576, Page cache: 0, Count: 7445504, Dropped: 0
+Count: 89 App: 4917248, Syscall: 2515968, Page cache: 0, Count: 7433216, Dropped: 0
+Count: 90 App: 5254144, Syscall: 2269184, Page cache: 0, Count: 7523328, Dropped: 0
+Count: 91 App: 5314560, Syscall: 2271232, Page cache: 0, Count: 7585792, Dropped: 0
+Count: 92 App: 5181440, Syscall: 2305024, Page cache: 0, Count: 7486464, Dropped: 0
+Count: 93 App: 4755456, Syscall: 2308096, Page cache: 0, Count: 7063552, Dropped: 0
+Count: 94 App: 4468736, Syscall: 2371584, Page cache: 0, Count: 6840320, Dropped: 0
+Count: 95 App: 4568064, Syscall: 2408448, Page cache: 0, Count: 6976512, Dropped: 0
+Count: 96 App: 5055488, Syscall: 2308096, Page cache: 0, Count: 7363584, Dropped: 0
+Count: 97 App: 4803584, Syscall: 2519040, Page cache: 0, Count: 7322624, Dropped: 0
+Count: 98 App: 4872192, Syscall: 2434048, Page cache: 0, Count: 7306240, Dropped: 0
+Count: 99 App: 5063680, Syscall: 2586624, Page cache: 0, Count: 7650304, Dropped: 0
+Count: 100 App: 4710400, Syscall: 2467840, Page cache: 0, Count: 7178240, Dropped: 0
+Count: 101 App: 5194752, Syscall: 2381824, Page cache: 0, Count: 7576576, Dropped: 0
+Count: 102 App: 5258240, Syscall: 2284544, Page cache: 0, Count: 7542784, Dropped: 0
+Count: 103 App: 4791296, Syscall: 2356224, Page cache: 0, Count: 7147520, Dropped: 0
+Count: 104 App: 4869120, Syscall: 2453504, Page cache: 0, Count: 7322624, Dropped: 0
+Count: 105 App: 4963328, Syscall: 2203648, Page cache: 0, Count: 7166976, Dropped: 0
+Count: 106 App: 5085184, Syscall: 2454528, Page cache: 0, Count: 7539712, Dropped: 0
+Count: 107 App: 5068800, Syscall: 2318336, Page cache: 0, Count: 7387136, Dropped: 0
+Count: 108 App: 5186560, Syscall: 2505728, Page cache: 0, Count: 7692288, Dropped: 0
+Count: 109 App: 5254144, Syscall: 2487296, Page cache: 0, Count: 7741440, Dropped: 0
+Count: 110 App: 4845568, Syscall: 2501632, Page cache: 0, Count: 7347200, Dropped: 0
+Count: 111 App: 5735424, Syscall: 2394112, Page cache: 0, Count: 8129536, Dropped: 0
+Count: 112 App: 5363712, Syscall: 2296832, Page cache: 0, Count: 7660544, Dropped: 0
+Count: 113 App: 4960256, Syscall: 2300928, Page cache: 0, Count: 7261184, Dropped: 0
+Count: 114 App: 4758528, Syscall: 2385920, Page cache: 0, Count: 7144448, Dropped: 0
+Count: 115 App: 5211136, Syscall: 2342912, Page cache: 0, Count: 7554048, Dropped: 0
+Count: 116 App: 5055488, Syscall: 2400256, Page cache: 0, Count: 7455744, Dropped: 0
+Count: 117 App: 4822016, Syscall: 2316288, Page cache: 0, Count: 7138304, Dropped: 0
+Count: 118 App: 5263360, Syscall: 2384896, Page cache: 0, Count: 7648256, Dropped: 0
+Count: 119 App: 5362688, Syscall: 2248704, Page cache: 0, Count: 7611392, Dropped: 0
+Count: 120 App: 4917248, Syscall: 2379776, Page cache: 0, Count: 7297024, Dropped: 0
+Count: 121 App: 5629952, Syscall: 2364416, Page cache: 0, Count: 7994368, Dropped: 0
+Count: 122 App: 4992000, Syscall: 2367488, Page cache: 0, Count: 7359488, Dropped: 0
+Count: 123 App: 4938752, Syscall: 2406400, Page cache: 0, Count: 7345152, Dropped: 0
+Count: 124 App: 4832256, Syscall: 2406400, Page cache: 0, Count: 7238656, Dropped: 0
+Count: 125 App: 5166080, Syscall: 2354176, Page cache: 0, Count: 7520256, Dropped: 0
+Count: 126 App: 4957184, Syscall: 2430976, Page cache: 0, Count: 7388160, Dropped: 0
+Count: 127 App: 5262336, Syscall: 2364416, Page cache: 0, Count: 7626752, Dropped: 0
+Count: 128 App: 5211136, Syscall: 2290688, Page cache: 0, Count: 7501824, Dropped: 0
+Count: 129 App: 4957184, Syscall: 2339840, Page cache: 0, Count: 7297024, Dropped: 0
+Count: 130 App: 5270528, Syscall: 2444288, Page cache: 0, Count: 7714816, Dropped: 0
+Count: 131 App: 5274624, Syscall: 2343936, Page cache: 0, Count: 7618560, Dropped: 0
+Count: 132 App: 4945920, Syscall: 2582528, Page cache: 0, Count: 7528448, Dropped: 0
+Count: 133 App: 4901888, Syscall: 2388992, Page cache: 0, Count: 7290880, Dropped: 0
+Count: 134 App: 5128192, Syscall: 2443264, Page cache: 0, Count: 7571456, Dropped: 0
+Workload done, saving data
+Batch count: 873994
+Receiver loop exited, doing nothing with data
+Waiting for records receiver to complete
+Workload done, exiting print out
+Average rocksdb rate per sec: 5026793.08
+Done

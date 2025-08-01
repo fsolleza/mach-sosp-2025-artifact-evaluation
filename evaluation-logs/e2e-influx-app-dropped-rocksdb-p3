@@ -1,0 +1,104 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 22647808, written: 9317376, total received 22647808 dropped 13330432
+Records received: 82073600, written: 4736000, total received 104721408 dropped 90668032
+Records received: 81093632, written: 4648960, total received 185815040 dropped 167112704
+Records received: 77044736, written: 4734976, total received 262859776 dropped 239422464
+Records received: 78604288, written: 4645888, total received 341464064 dropped 313380864
+Records received: 79441920, written: 5507072, total received 420905984 dropped 387315712
+Records received: 78510080, written: 5587968, total received 499416064 dropped 460237824
+Records received: 78687232, written: 5612544, total received 578103296 dropped 533312512
+Records received: 78057472, written: 5647360, total received 656160768 dropped 605722624
+Records received: 79948800, written: 5572608, total received 736109568 dropped 680098816
+Records received: 80800768, written: 5668864, total received 816910336 dropped 755230720
+min 2025-08-01T05:19:50.348736000Z max 2025-08-01T05:20:50.348736000Z
+Executing query 0
+Doing query: SELECT COUNT(pid)
+		FROM page_cache
+		WHERE source = 'id-11743562013128004906'
+		AND time >= '2025-08-01T05:19:50.348736000Z'
+		AND time <= '2025-08-01T05:20:50.348736000Z'
+Records received: 78694400, written: 5637120, total received 895604736 dropped 828288000
+Query Latency (Page Cache Event Count): 146.767787ms
+Records received: 77201408, written: 5653504, total received 972806144 dropped 899835904
+Records received: 82070528, written: 5585920, total received 1054876672 dropped 976320512
+Records received: 81093632, written: 5655552, total received 1135970304 dropped 1051758592
+Records received: 77047808, written: 5651456, total received 1213018112 dropped 1123154944
+Records received: 78604288, written: 5632000, total received 1291622400 dropped 1196127232
+Records received: 79437824, written: 5732352, total received 1371060224 dropped 1269832704
+Records received: 78509056, written: 5776384, total received 1449569280 dropped 1342565376
+Records received: 78687232, written: 5625856, total received 1528256512 dropped 1415626752
+Records received: 78060544, written: 5664768, total received 1606317056 dropped 1488022528
+Records received: 79948800, written: 5580800, total received 1686265856 dropped 1562390528
+Records received: 80801792, written: 5714944, total received 1767067648 dropped 1637477376
+Records received: 78690304, written: 5647360, total received 1845757952 dropped 1710520320
+min 2025-08-01T05:21:50.558186000Z max 2025-08-01T05:22:50.558186000Z
+Executing query 1
+Doing query: SELECT COUNT(pid)
+		FROM page_cache
+		WHERE source = 'id-11743562013128004906'
+		AND time >= '2025-08-01T05:21:50.558186000Z'
+		AND time <= '2025-08-01T05:22:50.558186000Z'
+Query Latency (Page Cache Event Count): 146.351725ms
+Records received: 77207552, written: 5694464, total received 1922965504 dropped 1782033408
+Records received: 82064384, written: 5576704, total received 2005029888 dropped 1858521088
+Records received: 81095680, written: 5634048, total received 2086125568 dropped 1933982720
+Records received: 77047808, written: 5682176, total received 2163173376 dropped 2005348352
+Records received: 78603264, written: 5628928, total received 2241776640 dropped 2078322688
+Records received: 79437824, written: 5568512, total received 2321214464 dropped 2152192000
+Records received: 78504960, written: 5756928, total received 2399719424 dropped 2224940032
+Records received: 78690304, written: 5644288, total received 2478409728 dropped 2297986048
+Records received: 78063616, written: 5651456, total received 2556473344 dropped 2370398208
+Records received: 79951872, written: 5689344, total received 2636425216 dropped 2444660736
+Records received: 80799744, written: 5661696, total received 2717224960 dropped 2519798784
+Records received: 78688256, written: 5612544, total received 2795913216 dropped 2592874496
+min 2025-08-01T05:23:50.600302000Z max 2025-08-01T05:24:50.600302000Z
+Executing query 2
+Doing query: SELECT COUNT(pid)
+		FROM page_cache
+		WHERE source = 'id-11743562013128004906'
+		AND time >= '2025-08-01T05:23:50.600302000Z'
+		AND time <= '2025-08-01T05:24:50.600302000Z'
+Query Latency (Page Cache Event Count): 164.941536ms
+Records received: 77210624, written: 5707776, total received 2873123840 dropped 2664377344
+Records received: 82065408, written: 5645312, total received 2955189248 dropped 2740797440
+Records received: 81095680, written: 5640192, total received 3036284928 dropped 2816252928
+Records received: 77039616, written: 5634048, total received 3113324544 dropped 2887658496
+Records received: 78605312, written: 5744640, total received 3191929856 dropped 2960519168
+Records received: 79440896, written: 5540864, total received 3271370752 dropped 3034419200
+Records received: 78504960, written: 5729280, total received 3349875712 dropped 3107194880
+Records received: 78693376, written: 5797888, total received 3428569088 dropped 3180090368
+Records received: 78061568, written: 5673984, total received 3506630656 dropped 3252477952
+Records received: 79948800, written: 5611520, total received 3586579456 dropped 3326815232
+Records received: 80796672, written: 5704704, total received 3667376128 dropped 3401907200
+Records received: 78693376, written: 5628928, total received 3746069504 dropped 3474971648
+min 2025-08-01T05:25:50.861442000Z max 2025-08-01T05:26:50.861442000Z
+Executing query 3
+Doing query: SELECT COUNT(pid)
+		FROM page_cache
+		WHERE source = 'id-11743562013128004906'
+		AND time >= '2025-08-01T05:25:50.861442000Z'
+		AND time <= '2025-08-01T05:26:50.861442000Z'
+Query Latency (Page Cache Event Count): 212.304876ms
+Records received: 77206528, written: 5634048, total received 3823276032 dropped 3546544128
+Records received: 82071552, written: 5721088, total received 3905347584 dropped 3622894592
+Records received: 81091584, written: 5677056, total received 3986439168 dropped 3698309120
+Records received: 77038592, written: 5568512, total received 4063477760 dropped 3769779200
+Records received: 78606336, written: 5676032, total received 4142084096 dropped 3842709504
+Records received: 79441920, written: 5600256, total received 4221526016 dropped 3916551168
+Records received: 78501888, written: 5732352, total received 4300027904 dropped 3989320704
+Records received: 78695424, written: 5658624, total received 4378723328 dropped 4062357504
+Records received: 78062592, written: 5653504, total received 4456785920 dropped 4134766592
+Records received: 79947776, written: 5608448, total received 4536733696 dropped 4209105920
+Records received: 80797696, written: 5613568, total received 4617531392 dropped 4284290048
+Records received: 78690304, written: 5617664, total received 4696221696 dropped 4357362688
+min 2025-08-01T05:27:50.974105000Z max 2025-08-01T05:28:50.974105000Z
+Executing query 4
+Doing query: SELECT COUNT(pid)
+		FROM page_cache
+		WHERE source = 'id-11743562013128004906'
+		AND time >= '2025-08-01T05:27:50.974105000Z'
+		AND time <= '2025-08-01T05:28:50.974105000Z'
+Query Latency (Page Cache Event Count): 143.014159ms

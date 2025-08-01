@@ -1,0 +1,25 @@
+phase,database,desc,value
+P1,Mach,Slow Requests,5.742926386
+P1,Mach,Dropped (%),0.0
+P2,Mach,Slow Requests,7.757720359
+P2,Mach,Slow sendto,2.333608937
+P2,Mach,Dropped (%),0.0
+P3,Mach,Max Request,0.840435283
+P3,Mach,Packet Scan,15.261194941
+P3,Mach,Dropped (%),0.0
+P1,FishStore-I,Slow Requests,8.899249
+P1,Fishstore-I,Dropped (%),0.0
+P2,FishStore-I,Slow Requests,20.341238
+P2,FishStore-I,Slow sendto,18.653939
+P2,FishStore-I,Dropped (%),0.0
+P3,FishStore-I,Max Request,21.902344
+P3,FishStore-I,Packet Scan,32.046581
+P3,FishStore-I,Dropped (%),0.0
+P1,Influx-complete,Slow Requests,88.634827108
+P2,Influx-complete,Slow Requests,103.583991375
+P2,Influx-complete,Slow sendto,187.897587579
+P3,Influx-complete,Max Request,4.217320987
+P3,Influx-complete,Packet Scan,94.181279041
+P1,Influx,Dropped (%),0.38658320877246855
+P2,Influx,Dropped (%),0.8658971112013126
+P3,Influx,Dropped (%),0.9115159085305942

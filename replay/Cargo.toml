@@ -1,0 +1,24 @@
+[package]
+name = "replay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "2.0.3"
+
+num = { workspace = true }
+data = { workspace = true }
+crossbeam = { workspace = true }
+utils = { workspace = true }
+clap = { workspace = true }
+tcp-channel = { workspace = true }
+serde = { workspace = true }
+
+[[bin]]
+name = "tcp-replay"
+path = "src/tcp-replay.rs"
+
+[[bin]]
+name = "data-stats"
+path = "src/data-stats.rs"
+

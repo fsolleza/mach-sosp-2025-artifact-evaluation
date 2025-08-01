@@ -1,0 +1,164 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 22160384, written: 11132928, total received 22160384 dropped 11027456
+Records received: 48667648, written: 6134784, total received 70828032 dropped 53560320
+Records received: 47091712, written: 6243328, total received 117919744 dropped 94408704
+Records received: 45680640, written: 6177792, total received 163600384 dropped 133911552
+Records received: 46482432, written: 6353920, total received 210082816 dropped 174040064
+Records received: 46330880, written: 6264832, total received 256413696 dropped 214106112
+Records received: 45722624, written: 6282240, total received 302136320 dropped 253546496
+Records received: 46278656, written: 6329344, total received 348414976 dropped 293495808
+Records received: 46058496, written: 6276096, total received 394473472 dropped 333278208
+Records received: 47758336, written: 6244352, total received 442231808 dropped 374792192
+Records received: 46870528, written: 6240256, total received 489102336 dropped 415422464
+min 2025-08-01T04:53:36.486248000Z max 2025-08-01T04:54:36.486248000Z
+Executing query 0
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:53:36.486248000Z'
+		AND time <= '2025-08-01T04:54:36.486248000Z'
+Records received: 45852672, written: 6236160, total received 534955008 dropped 455038976
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:53:36.486248000Z'
+		AND time <= '2025-08-01T04:54:36.486248000Z'
+Records received: 45927424, written: 4829184, total received 580882432 dropped 496137216
+Records received: 48662528, written: 4463616, total received 629544960 dropped 540336128
+Records received: 47097856, written: 4402176, total received 676642816 dropped 583031808
+Records received: 45682688, written: 4036608, total received 722325504 dropped 624677888
+Records received: 46477312, written: 5085184, total received 768802816 dropped 666070016
+Records received: 46331904, written: 5450752, total received 815134720 dropped 706951168
+Query Latency (Application Max Latency): 3.51390194s
+Query Latency (Application Tail Latency): 60.661430781s
+Records received: 45726720, written: 6260736, total received 860861440 dropped 746417152
+Records received: 46271488, written: 6118400, total received 907132928 dropped 786570240
+Records received: 46063616, written: 6164480, total received 953196544 dropped 826469376
+Records received: 47751168, written: 6160384, total received 1000947712 dropped 868060160
+Records received: 46875648, written: 6136832, total received 1047823360 dropped 908798976
+Records received: 45854720, written: 6247424, total received 1093678080 dropped 948406272
+Records received: 45926400, written: 6117376, total received 1139604480 dropped 988215296
+Records received: 48658432, written: 6070272, total received 1188262912 dropped 1030803456
+Records received: 47099904, written: 6133760, total received 1235362816 dropped 1071769600
+Records received: 45682688, written: 6223872, total received 1281045504 dropped 1111228416
+Records received: 46480384, written: 6224896, total received 1327525888 dropped 1151483904
+Records received: 46334976, written: 6182912, total received 1373860864 dropped 1191635968
+min 2025-08-01T04:56:40.577372000Z max 2025-08-01T04:57:40.577372000Z
+Executing query 1
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:56:40.577372000Z'
+		AND time <= '2025-08-01T04:57:40.577372000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:56:40.577372000Z'
+		AND time <= '2025-08-01T04:57:40.577372000Z'
+Records received: 45725696, written: 5470208, total received 1419586560 dropped 1231891456
+Records received: 46266368, written: 4472832, total received 1465852928 dropped 1273684992
+Records received: 46068736, written: 4420608, total received 1511921664 dropped 1315333120
+Records received: 47746048, written: 4156416, total received 1559667712 dropped 1358922752
+Records received: 46876672, written: 4366336, total received 1606544384 dropped 1401433088
+Records received: 45853696, written: 5081088, total received 1652398080 dropped 1442205696
+Query Latency (Application Max Latency): 3.124206784s
+Query Latency (Application Tail Latency): 55.387074869s
+Records received: 45929472, written: 5948416, total received 1698327552 dropped 1482186752
+Records received: 48658432, written: 6102016, total received 1746985984 dropped 1524743168
+Records received: 47096832, written: 6063104, total received 1794082816 dropped 1565776896
+Records received: 45682688, written: 6189056, total received 1839765504 dropped 1605270528
+Records received: 46484480, written: 6119424, total received 1886249984 dropped 1645635584
+Records received: 46329856, written: 6125568, total received 1932579840 dropped 1685839872
+Records received: 45722624, written: 6140928, total received 1978302464 dropped 1725421568
+Records received: 46269440, written: 6160384, total received 2024571904 dropped 1765530624
+Records received: 46068736, written: 6187008, total received 2070640640 dropped 1805412352
+Records received: 47747072, written: 6221824, total received 2118387712 dropped 1846937600
+Records received: 46877696, written: 6324224, total received 2165265408 dropped 1887491072
+Records received: 45855744, written: 6226944, total received 2211121152 dropped 1927119872
+min 2025-08-01T04:59:39.144519000Z max 2025-08-01T05:00:39.144519000Z
+Executing query 2
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:59:39.144519000Z'
+		AND time <= '2025-08-01T05:00:39.144519000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T04:59:39.144519000Z'
+		AND time <= '2025-08-01T05:00:39.144519000Z'
+Records received: 45927424, written: 5196800, total received 2257048576 dropped 1967850496
+Records received: 48658432, written: 4541440, total received 2305707008 dropped 2011967488
+Records received: 47092736, written: 3951616, total received 2352799744 dropped 2055108608
+Records received: 45687808, written: 5048320, total received 2398487552 dropped 2095748096
+Records received: 46484480, written: 4144128, total received 2444972032 dropped 2138088448
+Query Latency (Application Max Latency): 3.700090783s
+Query Latency (Application Tail Latency): 52.784320254s
+Records received: 46325760, written: 7041024, total received 2491297792 dropped 2177373184
+Records received: 45727744, written: 5662720, total received 2537025536 dropped 2217438208
+Records received: 46268416, written: 6017024, total received 2583293952 dropped 2257689600
+Records received: 46064640, written: 6219776, total received 2629358592 dropped 2297534464
+Records received: 47753216, written: 6270976, total received 2677111808 dropped 2339016704
+Records received: 46872576, written: 6249472, total received 2723984384 dropped 2379639808
+Records received: 45858816, written: 6210560, total received 2769843200 dropped 2419288064
+Records received: 45924352, written: 6238208, total received 2815767552 dropped 2458974208
+Records received: 48662528, written: 6150144, total received 2864430080 dropped 2501486592
+Records received: 47091712, written: 6145024, total received 2911521792 dropped 2542433280
+Records received: 45686784, written: 6202368, total received 2957208576 dropped 2581917696
+Records received: 46485504, written: 6241280, total received 3003694080 dropped 2622161920
+min 2025-08-01T05:02:35.708251000Z max 2025-08-01T05:03:35.708251000Z
+Executing query 3
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T05:02:35.708251000Z'
+		AND time <= '2025-08-01T05:03:35.708251000Z'
+Records received: 46323712, written: 5935104, total received 3050017792 dropped 2662550528
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T05:02:35.708251000Z'
+		AND time <= '2025-08-01T05:03:35.708251000Z'
+Records received: 45729792, written: 4881408, total received 3095747584 dropped 2703398912
+Records received: 46269440, written: 4548608, total received 3142017024 dropped 2745119744
+Records received: 46062592, written: 4679680, total received 3188079616 dropped 2786502656
+Records received: 47753216, written: 3798016, total received 3235832832 dropped 2830457856
+Records received: 46868480, written: 4860928, total received 3282701312 dropped 2872465408
+Query Latency (Application Max Latency): 3.511624612s
+Query Latency (Application Tail Latency): 51.809488696s
+Records received: 45862912, written: 6187008, total received 3328564224 dropped 2912141312
+Records received: 45921280, written: 6189056, total received 3374485504 dropped 2951873536
+Records received: 48663552, written: 6072320, total received 3423149056 dropped 2994464768
+Records received: 47092736, written: 6071296, total received 3470241792 dropped 3035486208
+Records received: 45686784, written: 6183936, total received 3515928576 dropped 3074989056
+Records received: 46484480, written: 6233088, total received 3562413056 dropped 3115240448
+Records received: 46323712, written: 6225920, total received 3608736768 dropped 3155338240
+Records received: 45728768, written: 6220800, total received 3654465536 dropped 3194846208
+Records received: 46270464, written: 6228992, total received 3700736000 dropped 3234887680
+Records received: 46067712, written: 6207488, total received 3746803712 dropped 3274747904
+Records received: 47750144, written: 6215680, total received 3794553856 dropped 3316282368
+Records received: 46866432, written: 6153216, total received 3841420288 dropped 3356995584
+min 2025-08-01T05:05:30.846912000Z max 2025-08-01T05:06:30.846912000Z
+Executing query 4
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T05:05:30.846912000Z'
+		AND time <= '2025-08-01T05:06:30.846912000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T05:05:30.846912000Z'
+		AND time <= '2025-08-01T05:06:30.846912000Z'
+Records received: 45864960, written: 5379072, total received 3887285248 dropped 3397481472
+Failed to read from stream, breaking
+Exiting handler thread
+Records received: 23704576, written: 2557952, total received 3910989824 dropped 3418628096
+Records received: 0, written: 0, total received 3910989824 dropped 3418628096
+Records received: 0, written: 0, total received 3910989824 dropped 3418628096
+Records received: 0, written: 0, total received 3910989824 dropped 3418628096
+Query Latency (Application Max Latency): 3.854000808s
+Query Latency (Application Tail Latency): 45.005698655s

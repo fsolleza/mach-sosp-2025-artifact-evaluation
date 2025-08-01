@@ -1,0 +1,25 @@
+phase,database,desc,value
+P1,Mach,Max,0.8730845450000001
+P1,Mach,Percentile,1.752506074
+P1,Mach,Dropped (%),0.0
+P2,Mach,Max,3.29328143
+P2,Mach,Percentile,1.755117447
+P2,Mach,Dropped (%),0.0
+P3,Mach,Count,1.325110015
+P3,Mach,Dropped (%),0.0
+P1,FishStore-I,Max,44.799725
+P1,FishStore-I,Percentile,44.799725
+P1,Fishstore-I,Dropped (%),0.0
+P2,FishStore-I,Max,41.874339
+P2,FishStore-I,Percentile,41.874339
+P2,FishStore-I,Dropped (%),0.0
+P3,FishStore-I,Count,1.999186
+P3,FishStore-I,Dropped (%),0.0
+P1,Influx-complete,Max,23.537990025
+P1,Influx-complete,Percentile,357.649034492
+P2,Influx-complete,Max,21.329450411
+P2,Influx-complete,Percentile,23.573238033
+P3,Influx-complete,Count,1.079413235
+P1,Influx,Dropped (%),0.8741081541612316
+P2,Influx,Dropped (%),0.9293907896633231
+P3,Influx,Dropped (%),0.9278443331820083

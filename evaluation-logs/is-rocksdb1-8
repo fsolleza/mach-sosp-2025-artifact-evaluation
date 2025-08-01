@@ -1,0 +1,20 @@
+Writing for 60s
+Rocksdb ingest scaling with 1 threads
+Elapsed: 60.000061135s, count: 229991424
+count tp: 3833190.4, bytes rate: 30665523.2
+Writing for 60s
+Rocksdb ingest scaling with 1 threads
+Elapsed: 60.000120618s, count: 236520448
+count tp: 3942007.466666667, bytes rate: 31536059.733333334
+Writing for 60s
+Rocksdb ingest scaling with 1 threads
+Elapsed: 60.000148088s, count: 239051776
+count tp: 3984196.2666666666, bytes rate: 31873570.133333333
+Writing for 60s
+Rocksdb ingest scaling with 1 threads
+Elapsed: 60.00003907s, count: 237632512
+count tp: 3960541.8666666667, bytes rate: 31684334.933333334
+Writing for 60s
+Rocksdb ingest scaling with 1 threads
+Elapsed: 60.000053815s, count: 237427983
+count tp: 3957133.05, bytes rate: 31657064.4

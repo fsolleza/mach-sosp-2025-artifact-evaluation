@@ -1,0 +1,21 @@
+Writing for 120s
+Dir: /nvme/data/mach/can_delete/tmp_data/ingest-scaling
+New timeline block
+count tp: 4319661.733302754, bytes rate: 1105833403.725505
+Writing for 120s
+Dir: /nvme/data/mach/can_delete/tmp_data/ingest-scaling
+New timeline block
+count tp: 3848226.045543071, bytes rate: 985145867.6590261
+Writing for 120s
+Dir: /nvme/data/mach/can_delete/tmp_data/ingest-scaling
+New timeline block
+count tp: 4090272.2539186515, bytes rate: 1047109697.0031748
+Writing thread exited, storage worker exiting
+Writing for 120s
+Dir: /nvme/data/mach/can_delete/tmp_data/ingest-scaling
+New timeline block
+count tp: 4282502.373212184, bytes rate: 1096320607.542319
+Writing for 120s
+Dir: /nvme/data/mach/can_delete/tmp_data/ingest-scaling
+New timeline block
+count tp: 4285895.470442259, bytes rate: 1097189240.4332182

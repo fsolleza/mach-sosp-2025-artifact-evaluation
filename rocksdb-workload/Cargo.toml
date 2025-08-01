@@ -1,0 +1,40 @@
+[package]
+name = "rocksdb-workload"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocksdb = "0.22"
+gettid = "0.1.3"
+core_affinity = "0.8.1"
+thread-priority = "1.1.0"
+ctrlc = "3.4.5"
+reqwest = { version = "0.12.9", features = ["blocking"] }
+tokio = { version = "1", features = ["full"] }
+# influxdb3_client = { path = "/home/fsolleza/Downloads/influxdb/influxdb3_client" }
+
+num = { workspace = true }
+crossbeam = { workspace = true }
+utils = { workspace = true }
+rand = { workspace = true }
+data = { workspace = true }
+libc = { workspace = true }
+libbpf-rs = { workspace = true }
+clap = { workspace = true }
+lzzzz = { workspace = true }
+
+
+[build-dependencies]
+libbpf-cargo = { workspace = true }
+
+# [[bin]]
+# name = "rocksdb-workload"
+# path = "src/main.rs"
+# 
+# [[bin]]
+# name = "query_latency_timeline"
+# path = "src/query_latency_timeline.rs"
+# 
+# [[bin]]
+# name = "inference-workload"
+# path = "src/inference_workload.rs"

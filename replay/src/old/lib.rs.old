@@ -1,0 +1,135 @@
+//pub mod tcp;
+// use std::{
+// 	fs::File,
+// 	thread,
+// 	sync::atomic::{AtomicU64, AtomicBool, Ordering::SeqCst},
+// 	sync::{Arc, Barrier},
+// 	io::Read,
+// };
+// use data::record::{RecordBatchesDeserializer};
+// use utils::{Duration, Instant};
+// use crossbeam::channel::{Sender, Receiver, bounded, RecvTimeoutError, RecvError};
+// use thiserror::Error;
+// 
+// pub use data::record::{RecordBatch, Record};
+
+// #[derive(Error, Debug)]
+// pub enum ReplayerError {
+// 	#[error("Receiver timed out")]
+// 	RecvTimeoutError(#[from] RecvTimeoutError),
+// 
+// 	#[error("Receiver error")]
+// 	RecvError(#[from] RecvError),
+// }
+// 
+// #[derive(Clone)]
+// pub struct Replayer {
+// 	barrier: Arc<Barrier>,
+// 	rx: Receiver<RecordBatch>,
+// 	generated: Arc<AtomicU64>,
+// 	dropped: Arc<AtomicU64>,
+// 	behind: Arc<AtomicU64>,
+// 	done: Arc<AtomicBool>,
+// }
+// 
+// impl Replayer {
+// 	pub fn new(file_path: &str, queue_sz: usize, no_wait: bool) -> Self {
+// 		let barrier = Arc::new(Barrier::new(2));
+// 		let generated = Arc::new(AtomicU64::new(0));
+// 		let dropped = Arc::new(AtomicU64::new(0));
+// 		let behind = Arc::new(AtomicU64::new(0));
+// 		let done = Arc::new(AtomicBool::new(false));
+// 
+// 		let barrier2 = barrier.clone();
+// 		let generated2 = generated.clone();
+// 		let dropped2 = dropped.clone();
+// 		let behind2 = behind.clone();
+// 		let done2 = done.clone();
+// 
+// 		let (tx, rx) = bounded(queue_sz);
+// 		let file_path = String::from(file_path);
+// 		thread::spawn(move || {
+// 			replay_batches(&file_path, tx, barrier2, generated2, dropped2, behind2, done2, !no_wait);
+// 		});
+// 
+// 		Self {
+// 			barrier,
+// 			rx,
+// 			dropped,
+// 			generated,
+// 			behind,
+// 			done,
+// 		}
+// 	}
+// 
+// 	pub fn done(&self) -> bool {
+// 		self.done.load(SeqCst)
+// 	}
+// 
+// 	pub fn generated(&self) -> u64 {
+// 		self.generated.load(SeqCst)
+// 	}
+// 
+// 	pub fn dropped(&self) -> u64 {
+// 		self.dropped.load(SeqCst)
+// 	}
+// 
+// 	pub fn behind(&self) -> u64 {
+// 		self.behind.load(SeqCst)
+// 	}
+// 
+// 	pub fn next_item(&self, timeout: Option<Duration>) -> Result<RecordBatch, ReplayerError> {
+// 		Ok(match timeout {
+// 			Some(x) => self.rx.recv_timeout(x)?,
+// 			None => self.rx.recv()?,
+// 		})
+// 	}
+// 
+// 	pub fn start(&self) {
+// 		self.barrier.wait();
+// 	}
+// }
+// 
+// fn replay_batches(
+// 	file_path: &str,
+// 	out: Sender<RecordBatch>,
+// 	barrier: Arc<Barrier>,
+// 	generated: Arc<AtomicU64>,
+// 	dropped: Arc<AtomicU64>,
+// 	behind: Arc<AtomicU64>,
+// 	done: Arc<AtomicBool>,
+// 	wait: bool,
+// ) {
+// 	let mut file = File::open(file_path).unwrap();
+// 	let mut data = Vec::new();
+// 	let _ = file.read_to_end(&mut data).unwrap();
+// 	let mut deserializer = RecordBatchesDeserializer::new(data);
+// 	let now = Instant::now();
+// 	let mut start_time = u64::MAX;
+// 
+// 	barrier.wait();
+// 	while let Some(batch) = deserializer.next_batch() {
+// 		if start_time == u64::MAX {
+// 			start_time = batch.arrival_us;
+// 		}
+// 		let d: u64 = batch.arrival_us - start_time;
+// 
+// 		if (now.elapsed().as_micros() as u64) > d {
+// 			behind.fetch_add(1, SeqCst);
+// 		}
+// 
+// 		if wait {
+// 			while (now.elapsed().as_micros() as u64) < d {}
+// 		}
+// 
+// 		let l = batch.data.len() as u64;
+// 		generated.fetch_add(l, SeqCst);
+// 		if out.try_send(batch).is_err() {
+// 			dropped.fetch_add(l, SeqCst);
+// 		}
+// 	}
+// 	done.store(true, SeqCst);
+// }
+
+
+

@@ -1,0 +1,7 @@
+#include "simdjson/icelake/base.h"
+
+#if !SIMDJSON_CAN_ALWAYS_RUN_ICELAKE
+SIMDJSON_UNTARGET_REGION
+#endif
+
+#undef SIMDJSON_IMPLEMENTATION

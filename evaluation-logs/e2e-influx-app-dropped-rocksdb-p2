@@ -1,0 +1,135 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 9556992, written: 8866816, total received 9556992 dropped 690176
+Records received: 80292864, written: 5568512, total received 89849856 dropped 75414528
+Records received: 80750592, written: 5628928, total received 170600448 dropped 150536192
+Records received: 77837312, written: 5682176, total received 248437760 dropped 222691328
+Records received: 77370368, written: 5659648, total received 325808128 dropped 294402048
+Records received: 79568896, written: 5622784, total received 405377024 dropped 368348160
+Records received: 79064064, written: 5665792, total received 484441088 dropped 441746432
+Records received: 76883968, written: 5678080, total received 561325056 dropped 512952320
+Records received: 75810816, written: 5657600, total received 637135872 dropped 583105536
+Records received: 79964160, written: 5595136, total received 717100032 dropped 657474560
+Records received: 79533056, written: 5633024, total received 796633088 dropped 731374592
+min 2025-08-01T05:09:01.977915000Z max 2025-08-01T05:10:01.977915000Z
+Executing query 0
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:09:01.977915000Z'
+		AND time <= '2025-08-01T05:10:01.977915000Z' 
+Records received: 80518144, written: 5661696, total received 877151232 dropped 806231040
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:09:01.977915000Z'
+		AND time <= '2025-08-01T05:10:01.977915000Z'
+Query Latency (pread64 Max Latency): 1.529512542s
+Query Latency (pread64 Tail Latency): 2.120310534s
+Records received: 78295040, written: 5278720, total received 955446272 dropped 879247360
+Records received: 80374784, written: 5668864, total received 1035821056 dropped 953953280
+Records received: 80668672, written: 5552128, total received 1116489728 dropped 1029069824
+Records received: 77834240, written: 5664768, total received 1194323968 dropped 1101239296
+Records received: 77369344, written: 5728256, total received 1271693312 dropped 1172880384
+Records received: 79567872, written: 5579776, total received 1351261184 dropped 1246868480
+Records received: 79065088, written: 5647360, total received 1430326272 dropped 1320286208
+Records received: 76883968, written: 5649408, total received 1507210240 dropped 1391520768
+Records received: 75806720, written: 5613568, total received 1583016960 dropped 1461713920
+Records received: 79965184, written: 5681152, total received 1662982144 dropped 1535997952
+Records received: 79536128, written: 5624832, total received 1742518272 dropped 1609909248
+Records received: 80507904, written: 5626880, total received 1823026176 dropped 1684790272
+min 2025-08-01T05:11:05.550843000Z max 2025-08-01T05:12:05.550843000Z
+Executing query 1
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:11:05.550843000Z'
+		AND time <= '2025-08-01T05:12:05.550843000Z' 
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:11:05.550843000Z'
+		AND time <= '2025-08-01T05:12:05.550843000Z'
+Query Latency (pread64 Max Latency): 1.751874572s
+Query Latency (pread64 Tail Latency): 2.066380527s
+Records received: 78305280, written: 5204992, total received 1901331456 dropped 1757890560
+Records received: 80377856, written: 5636096, total received 1981709312 dropped 1832632320
+Records received: 80665600, written: 5532672, total received 2062374912 dropped 1907765248
+Records received: 77838336, written: 5606400, total received 2140213248 dropped 1979997184
+Records received: 77365248, written: 5703680, total received 2217578496 dropped 2051658752
+Records received: 79566848, written: 5682176, total received 2297145344 dropped 2125543424
+Records received: 79066112, written: 5641216, total received 2376211456 dropped 2198968320
+Records received: 76882944, written: 5648384, total received 2453094400 dropped 2270202880
+Records received: 75759616, written: 5654528, total received 2528854016 dropped 2340307968
+Records received: 80016384, written: 5647360, total received 2608870400 dropped 2414676992
+Records received: 79533056, written: 5616640, total received 2688403456 dropped 2488593408
+Records received: 80502784, written: 5696512, total received 2768906240 dropped 2563399680
+min 2025-08-01T05:13:09.522098000Z max 2025-08-01T05:14:09.522098000Z
+Executing query 2
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:13:09.522098000Z'
+		AND time <= '2025-08-01T05:14:09.522098000Z' 
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:13:09.522098000Z'
+		AND time <= '2025-08-01T05:14:09.522098000Z'
+Records received: 78307328, written: 5437440, total received 2847213568 dropped 2636269568
+Query Latency (pread64 Max Latency): 1.650898818s
+Query Latency (pread64 Tail Latency): 2.370048981s
+Records received: 80378880, written: 5214208, total received 2927592448 dropped 2711434240
+Records received: 80666624, written: 5642240, total received 3008259072 dropped 2786458624
+Records received: 77838336, written: 5656576, total received 3086097408 dropped 2858640384
+Records received: 77367296, written: 5673984, total received 3163464704 dropped 2930333696
+Records received: 79562752, written: 5651456, total received 3243027456 dropped 3004244992
+Records received: 79066112, written: 5789696, total received 3322093568 dropped 3077521408
+Records received: 76887040, written: 5670912, total received 3398980608 dropped 3148737536
+Records received: 75801600, written: 5687296, total received 3474782208 dropped 3218851840
+Records received: 79972352, written: 5602304, total received 3554754560 dropped 3293221888
+Records received: 79533056, written: 5705728, total received 3634287616 dropped 3367049216
+Records received: 80491520, written: 5682176, total received 3714779136 dropped 3441858560
+Records received: 78313472, written: 5695488, total received 3793092608 dropped 3514476544
+min 2025-08-01T05:15:13.665401000Z max 2025-08-01T05:16:13.665401000Z
+Executing query 3
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:15:13.665401000Z'
+		AND time <= '2025-08-01T05:16:13.665401000Z' 
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:15:13.665401000Z'
+		AND time <= '2025-08-01T05:16:13.665401000Z'
+Query Latency (pread64 Max Latency): 1.610286285s
+Query Latency (pread64 Tail Latency): 1.93273694s
+Records received: 80378880, written: 5225472, total received 3873471488 dropped 3589629952
+Records received: 80669696, written: 4569088, total received 3954141184 dropped 3665730560
+Records received: 77838336, written: 4539392, total received 4031979520 dropped 3739029504
+Records received: 77364224, written: 4822016, total received 4109343744 dropped 3811571712
+Records received: 79564800, written: 4611072, total received 4188908544 dropped 3886525440
+Records received: 79063040, written: 4663296, total received 4267971584 dropped 3960925184
+Records received: 76889088, written: 4695040, total received 4344860672 dropped 4033119232
+Records received: 75803648, written: 4505600, total received 4420664320 dropped 4104417280
+Records received: 79976448, written: 4492288, total received 4500640768 dropped 4179901440
+Records received: 79532032, written: 4637696, total received 4580172800 dropped 4254795776
+Records received: 80484352, written: 4600832, total received 4660657152 dropped 4330679296
+Records received: 78321664, written: 4637696, total received 4738978816 dropped 4404363264
+min 2025-08-01T05:17:13.573529000Z max 2025-08-01T05:18:13.573529000Z
+Executing query 4
+Doing query: SELECT COUNT(duration_us), MAX(duration_us)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:17:13.573529000Z'
+		AND time <= '2025-08-01T05:18:13.573529000Z' 
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM syscall_event
+		WHERE source = 'id-8542843711054574807'
+		AND time >= '2025-08-01T05:17:13.573529000Z'
+		AND time <= '2025-08-01T05:18:13.573529000Z'
+Query Latency (pread64 Max Latency): 1.140972722s
+Query Latency (pread64 Tail Latency): 1.366022039s

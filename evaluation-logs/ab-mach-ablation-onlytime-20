@@ -1,0 +1,51 @@
+Mach path: "/nvme/data/mach/can_delete/tmp_data/mach_store"
+Initializing Mach
+Queue size: 1024 batches
+Launched listener thread
+Launched ingest thread
+Records received: 0, dropped: 0, total received 0 dropped 0
+Bin_ids for this range index: 12, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 13
+Bin_ids for this range index: 25, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 26
+Records received: 33646592, dropped: 0, total received 33646592 dropped 0
+Records received: 80779264, dropped: 0, total received 114425856 dropped 0
+Records received: 80890880, dropped: 0, total received 195316736 dropped 0
+Records received: 76377088, dropped: 0, total received 271693824 dropped 0
+Records received: 78461952, dropped: 0, total received 350155776 dropped 0
+Records received: 78757888, dropped: 0, total received 428913664 dropped 0
+Records received: 78698496, dropped: 0, total received 507612160 dropped 0
+Records received: 76486656, dropped: 0, total received 584098816 dropped 0
+Records received: 77275136, dropped: 0, total received 661373952 dropped 0
+Records received: 80019456, dropped: 0, total received 741393408 dropped 0
+Records received: 79762432, dropped: 0, total received 821155840 dropped 0
+Records received: 79227904, dropped: 0, total received 900383744 dropped 0
+Records received: 79148032, dropped: 0, total received 979531776 dropped 0
+New timeline block
+Records received: 80772096, dropped: 0, total received 1060303872 dropped 0
+Reader ts: 145000439
+Max ts: 120000439
+Min ts: 439
+Executing ablation time only
+Found entry ts < ts: 119657822 < 120000439
+Found first entry in 2.561303ms
+Records received: 40024064, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Records received: 0, dropped: 0, total received 1100327936 dropped 0
+Scanned items: 485887611
+Done executing in 163.7128736s, 55396
+Time TSL chunks read: 0
+Index TSL chunks read: 0
+Data TSLs chunks read: 989800
+Duraton: 163.712887799s

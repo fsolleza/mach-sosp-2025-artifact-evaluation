@@ -1,0 +1,129 @@
+Initializing Fishstore
+Starting indexingSuccessfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Setup done... beginning writing
+Ingest paused...
+Starting up 8 ingest threads
+Waiting for a connection
+Got a connection
+Handling conn 4
+Sent start signal, beginning to receive data
+Received: 7717888, Written: 7717888, Dropped: 0, total received 7717888 dropped 0
+Received: 9681920, Written: 9681920, Dropped: 0, total received 17399808 dropped 0
+Received: 9592832, Written: 9592832, Dropped: 0, total received 26992640 dropped 0
+Received: 9640960, Written: 9640960, Dropped: 0, total received 36633600 dropped 0
+Received: 9627648, Written: 9627648, Dropped: 0, total received 46261248 dropped 0
+Received: 9671680, Written: 9671680, Dropped: 0, total received 55932928 dropped 0
+Received: 9619456, Written: 9619456, Dropped: 0, total received 65552384 dropped 0
+Received: 9667584, Written: 9667584, Dropped: 0, total received 75219968 dropped 0
+Received: 9668608, Written: 9668608, Dropped: 0, total received 84888576 dropped 0
+Received: 9629696, Written: 9629696, Dropped: 0, total received 94518272 dropped 0
+Received: 9713664, Written: 9713664, Dropped: 0, total received 104231936 dropped 0
+Received: 9655296, Written: 9655296, Dropped: 0, total received 113887232 dropped 0
+Querying
+Ingest paused...
+Finalizing 51969965 51969965
+Sorting
+Calculating index
+Index: 51964768
+Q1 count 51969965, max 212153, 99.99: 473 
+Query Latency (Page Cache Event Count): 9.038772 secs 
+Done with complete pending
+Tile: 473 Number of u64 in memory: 51969965
+Query Latency (Slow Requests): 9.038772 secs 
+Received: 912384, Written: 912384, Dropped: 0, total received 114799616 dropped 0
+Received: 9610240, Written: 9610240, Dropped: 0, total received 124409856 dropped 0
+Received: 9635840, Written: 9635840, Dropped: 0, total received 134045696 dropped 0
+Received: 9629696, Written: 9629696, Dropped: 0, total received 143675392 dropped 0
+Received: 9673728, Written: 9673728, Dropped: 0, total received 153349120 dropped 0
+Received: 9624576, Written: 9624576, Dropped: 0, total received 162973696 dropped 0
+Received: 9656320, Written: 9656320, Dropped: 0, total received 172630016 dropped 0
+Received: 9666560, Written: 9666560, Dropped: 0, total received 182296576 dropped 0
+Received: 9628672, Written: 9628672, Dropped: 0, total received 191925248 dropped 0
+Received: 9713664, Written: 9713664, Dropped: 0, total received 201638912 dropped 0
+Received: 9652224, Written: 9652224, Dropped: 0, total received 211291136 dropped 0
+Received: 9185280, Written: 9185280, Dropped: 0, total received 220476416 dropped 0
+Received: 8792064, Written: 8792064, Dropped: 0, total received 229268480 dropped 0
+Querying
+Ingest paused...
+Finalizing 52034061 52034061
+Sorting
+Calculating index
+Index: 52028857
+Q1 count 52034061, max 211031, 99.99: 471 
+Query Latency (Page Cache Event Count): 8.928944 secs 
+Done with complete pending
+Tile: 471 Number of u64 in memory: 52034061
+Query Latency (Slow Requests): 8.928944 secs 
+Received: 1934336, Written: 1934336, Dropped: 0, total received 231202816 dropped 0
+Received: 9624576, Written: 9624576, Dropped: 0, total received 240827392 dropped 0
+Received: 9668608, Written: 9668608, Dropped: 0, total received 250496000 dropped 0
+Received: 9622528, Written: 9622528, Dropped: 0, total received 260118528 dropped 0
+Received: 9663488, Written: 9663488, Dropped: 0, total received 269782016 dropped 0
+Received: 9665536, Written: 9665536, Dropped: 0, total received 279447552 dropped 0
+Received: 9637888, Written: 9637888, Dropped: 0, total received 289085440 dropped 0
+Received: 9705472, Written: 9705472, Dropped: 0, total received 298790912 dropped 0
+Received: 9661440, Written: 9661440, Dropped: 0, total received 308452352 dropped 0
+Received: 9183232, Written: 9183232, Dropped: 0, total received 317635584 dropped 0
+Received: 9667584, Written: 9667584, Dropped: 0, total received 327303168 dropped 0
+Received: 9616384, Written: 9616384, Dropped: 0, total received 336919552 dropped 0
+Received: 7727104, Written: 7727104, Dropped: 0, total received 344646656 dropped 0
+Querying
+Ingest paused...
+Finalizing 51652842 51652842
+Sorting
+Calculating index
+Index: 51647676
+Q1 count 51652842, max 211556, 99.99: 494 
+Query Latency (Page Cache Event Count): 8.899249 secs 
+Done with complete pending
+Tile: 494 Number of u64 in memory: 51652842
+Query Latency (Slow Requests): 8.899249 secs 
+Received: 2992128, Written: 2992128, Dropped: 0, total received 347638784 dropped 0
+Received: 9615360, Written: 9615360, Dropped: 0, total received 357254144 dropped 0
+Received: 9668608, Written: 9668608, Dropped: 0, total received 366922752 dropped 0
+Received: 9661440, Written: 9661440, Dropped: 0, total received 376584192 dropped 0
+Received: 9633792, Written: 9633792, Dropped: 0, total received 386217984 dropped 0
+Received: 9710592, Written: 9710592, Dropped: 0, total received 395928576 dropped 0
+Received: 9650176, Written: 9650176, Dropped: 0, total received 405578752 dropped 0
+Received: 9183232, Written: 9183232, Dropped: 0, total received 414761984 dropped 0
+Received: 9675776, Written: 9675776, Dropped: 0, total received 424437760 dropped 0
+Received: 9609216, Written: 9609216, Dropped: 0, total received 434046976 dropped 0
+Received: 9648128, Written: 9648128, Dropped: 0, total received 443695104 dropped 0
+Received: 9624576, Written: 9624576, Dropped: 0, total received 453319680 dropped 0
+Received: 6702080, Written: 6702080, Dropped: 0, total received 460021760 dropped 0
+Querying
+Ingest paused...
+Finalizing 51618442 51618442
+Sorting
+Calculating index
+Index: 51613280
+Q1 count 51618442, max 211556, 99.99: 568 
+Query Latency (Page Cache Event Count): 8.804245 secs 
+Done with complete pending
+Tile: 568 Number of u64 in memory: 51618442
+Query Latency (Slow Requests): 8.804245 secs 
+Received: 4110336, Written: 4110336, Dropped: 0, total received 464132096 dropped 0
+Received: 9653248, Written: 9653248, Dropped: 0, total received 473785344 dropped 0
+Received: 9651200, Written: 9651200, Dropped: 0, total received 483436544 dropped 0
+Received: 9696256, Written: 9696256, Dropped: 0, total received 493132800 dropped 0
+Received: 9671680, Written: 9671680, Dropped: 0, total received 502804480 dropped 0
+Received: 9174016, Written: 9174016, Dropped: 0, total received 511978496 dropped 0
+Received: 9669632, Written: 9669632, Dropped: 0, total received 521648128 dropped 0
+Received: 9615360, Written: 9615360, Dropped: 0, total received 531263488 dropped 0
+Received: 9639936, Written: 9639936, Dropped: 0, total received 540903424 dropped 0
+Received: 9620480, Written: 9620480, Dropped: 0, total received 550523904 dropped 0
+Received: 9671680, Written: 9671680, Dropped: 0, total received 560195584 dropped 0
+Received: 9624576, Written: 9624576, Dropped: 0, total received 569820160 dropped 0
+Received: 5586944, Written: 5586944, Dropped: 0, total received 575407104 dropped 0
+Querying
+Ingest paused...
+Finalizing 51531362 51531362
+Sorting
+Calculating index
+Index: 51526208
+Q1 count 51531362, max 212153, 99.99: 539 
+Query Latency (Page Cache Event Count): 8.812595 secs 
+Done with complete pending
+Tile: 539 Number of u64 in memory: 51531362
+Query Latency (Slow Requests): 8.812595 secs 

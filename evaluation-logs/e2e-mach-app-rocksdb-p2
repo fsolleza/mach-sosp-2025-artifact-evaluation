@@ -1,0 +1,229 @@
+Mach path: "/nvme/data/mach/can_delete/tmp_data/mach_store"
+Initializing Mach
+Queue size: 1024 batches
+Launched listener thread
+Launched ingest thread
+Records received: 0, dropped: 0, total received 0 dropped 0
+Bin_ids for this range index: 12, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 13
+Bin_ids for this range index: 25, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 26
+Records received: 30776320, dropped: 0, total received 30776320 dropped 0
+Records received: 80800768, dropped: 0, total received 111577088 dropped 0
+Records received: 80857088, dropped: 0, total received 192434176 dropped 0
+Records received: 76469248, dropped: 0, total received 268903424 dropped 0
+Records received: 78214144, dropped: 0, total received 347117568 dropped 0
+Records received: 78930944, dropped: 0, total received 426048512 dropped 0
+Records received: 78590976, dropped: 0, total received 504639488 dropped 0
+Records received: 76780544, dropped: 0, total received 581420032 dropped 0
+Records received: 76946432, dropped: 0, total received 658366464 dropped 0
+Records received: 80425984, dropped: 0, total received 738792448 dropped 0
+Records received: 79435776, dropped: 0, total received 818228224 dropped 0
+Running query 0
+Records received: 79152128, dropped: 0, total received 897380352 dropped 0
+Failed copy
+Failed copy
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+Indexed timestamp: 100000538
+1. Scanned indexes in 1.301679403s
+2. Scanned 60 records in 1 indexed chunks that may contain a record 232.73µs
+Found entry ts < ts: 98791568 < 100000438
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 100000538 index scan max time 100000538
+3. Scanned 27156 unindexed records after last indexed timestamp 241.283242ms
+Q2 Max 1.543233676s
+Max Result: AggregationU64 { sum: 33068861, count: 16393132, min: 0, max: 39438 }
+Query source: 8542843711054574807
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+>> Query prelude 9.899µs
+1. Scanned all indexes in 146.562581ms
+2. Scanned data chunks that were partially covered by an index in 6.691µs
+Found entry ts < ts: 98791568 < 100000438
+3. Scanned 27156 unindexed records after last indexed timestamp in 13.700683ms
+Curr percentile: 0.9994841132249773
+Curr bin: 26
+Remaining tile points 0.0004158867750226891 Remaining count: 6817
+Number of data chunks to scan: 4127
+4. Scanned 8457 records in bucket 26 to find percentile in 1.229286103s. Records in memory 8457
+Percentile Result: 154
+Query Latency (pread64 Max Latency): 1.543233651s
+Query Latency (pread64 Tail Latency): 1.389945558s
+Records received: 79280128, dropped: 0, total received 976660480 dropped 0
+New timeline block
+Records received: 80801792, dropped: 0, total received 1057462272 dropped 0
+Records received: 80851968, dropped: 0, total received 1138314240 dropped 0
+Records received: 76474368, dropped: 0, total received 1214788608 dropped 0
+Records received: 78216192, dropped: 0, total received 1293004800 dropped 0
+Records received: 78929920, dropped: 0, total received 1371934720 dropped 0
+Records received: 78594048, dropped: 0, total received 1450528768 dropped 0
+Records received: 76776448, dropped: 0, total received 1527305216 dropped 0
+Records received: 76948480, dropped: 0, total received 1604253696 dropped 0
+Records received: 80418816, dropped: 0, total received 1684672512 dropped 0
+Records received: 79442944, dropped: 0, total received 1764115456 dropped 0
+Records received: 79148032, dropped: 0, total received 1843263488 dropped 0
+Running query 1
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+Indexed timestamp: 223390013
+1. Scanned indexes in 1.33381474s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 343ns
+Found entry ts < ts: 222890418 < 223389970
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 223389894 index scan max time 223390013
+3. Scanned 240858 unindexed records after last indexed timestamp 1.959429003s
+Q2 Max 3.293281455s
+Max Result: AggregationU64 { sum: 32552451, count: 16237199, min: 0, max: 39438 }
+Query source: 8542843711054574807
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+>> Query prelude 8.533µs
+1. Scanned all indexes in 153.100399ms
+2. Scanned data chunks that were partially covered by an index in 176ns
+Found entry ts < ts: 222890418 < 223389970
+3. Scanned 240858 unindexed records after last indexed timestamp in 98.564724ms
+Curr percentile: 0.9994864261994942
+Curr bin: 26
+Remaining tile points 0.0004135738005057732 Remaining count: 6715
+Number of data chunks to scan: 4041
+4. Scanned 8339 records in bucket 26 to find percentile in 1.437770304s. Records in memory 8339
+Percentile Result: 154
+Query Latency (pread64 Max Latency): 3.29328143s
+Query Latency (pread64 Tail Latency): 1.689486166s
+Records received: 79285248, dropped: 0, total received 1922548736 dropped 0
+Records received: 80797696, dropped: 0, total received 2003346432 dropped 0
+New timeline block
+Records received: 80854016, dropped: 0, total received 2084200448 dropped 0
+Records received: 76473344, dropped: 0, total received 2160673792 dropped 0
+Records received: 78217216, dropped: 0, total received 2238891008 dropped 0
+Records received: 78925824, dropped: 0, total received 2317816832 dropped 0
+Records received: 78599168, dropped: 0, total received 2396416000 dropped 0
+Records received: 76778496, dropped: 0, total received 2473194496 dropped 0
+Records received: 76944384, dropped: 0, total received 2550138880 dropped 0
+Records received: 80416768, dropped: 0, total received 2630555648 dropped 0
+Records received: 79446016, dropped: 0, total received 2710001664 dropped 0
+Records received: 79147008, dropped: 0, total received 2789148672 dropped 0
+Running query 2
+Failed copy
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+Indexed timestamp: 348779149
+Records received: 79281152, dropped: 0, total received 2868429824 dropped 0
+1. Scanned indexes in 1.742919009s
+2. Scanned 0 records in 0 indexed chunks that may contain a record 478ns
+Found entry ts < ts: 348408447 < 348779128
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 348779149 index scan max time 348779149
+3. Scanned 185195 unindexed records after last indexed timestamp 2.360575921s
+Q2 Max 4.103531056s
+Max Result: AggregationU64 { sum: 32248984, count: 16082779, min: 0, max: 39438 }
+Query source: 8542843711054574807
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+>> Query prelude 13.144µs
+1. Scanned all indexes in 149.724376ms
+2. Scanned data chunks that were partially covered by an index in 174ns
+Found entry ts < ts: 348408447 < 348779128
+3. Scanned 185195 unindexed records after last indexed timestamp in 83.106132ms
+Curr percentile: 0.9994814950824108
+Curr bin: 26
+Remaining tile points 0.00041850491758921304 Remaining count: 6730
+Number of data chunks to scan: 4059
+4. Scanned 8339 records in bucket 26 to find percentile in 1.623411856s. Records in memory 8339
+Percentile Result: 154
+Query Latency (pread64 Max Latency): 4.103531013s
+Query Latency (pread64 Tail Latency): 1.856308259s
+Records received: 80803840, dropped: 0, total received 2949233664 dropped 0
+Records received: 80851968, dropped: 0, total received 3030085632 dropped 0
+Records received: 76473344, dropped: 0, total received 3106558976 dropped 0
+New timeline block
+Records received: 78221312, dropped: 0, total received 3184780288 dropped 0
+Records received: 78922752, dropped: 0, total received 3263703040 dropped 0
+Records received: 78597120, dropped: 0, total received 3342300160 dropped 0
+Records received: 76773376, dropped: 0, total received 3419073536 dropped 0
+Records received: 76950528, dropped: 0, total received 3496024064 dropped 0
+Records received: 80417792, dropped: 0, total received 3576441856 dropped 0
+Records received: 79444992, dropped: 0, total received 3655886848 dropped 0
+Records received: 79148032, dropped: 0, total received 3735034880 dropped 0
+Records received: 79285248, dropped: 0, total received 3814320128 dropped 0
+Running query 3
+Failed copy
+Failed copy
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+Indexed timestamp: 475208818
+1. Scanned indexes in 1.060801596s
+2. Scanned 38 records in 1 indexed chunks that may contain a record 229.118µs
+Found entry ts < ts: 475048938 < 475208436
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 475208818 index scan max time 475208818
+3. Scanned 240391 unindexed records after last indexed timestamp 2.482929491s
+Q2 Max 3.543994404s
+Max Result: AggregationU64 { sum: 33147644, count: 16203144, min: 0, max: 39438 }
+Query source: 8542843711054574807
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+>> Query prelude 8.626µs
+1. Scanned all indexes in 144.640237ms
+2. Scanned data chunks that were partially covered by an index in 28.967µs
+Found entry ts < ts: 475048938 < 475208436
+3. Scanned 240391 unindexed records after last indexed timestamp in 150.587673ms
+Curr percentile: 0.9993554337355762
+Curr bin: 26
+Remaining tile points 0.0005445662644237848 Remaining count: 8823
+Number of data chunks to scan: 5178
+Records received: 80795648, dropped: 0, total received 3895115776 dropped 0
+4. Scanned 10444 records in bucket 26 to find percentile in 1.459813887s. Records in memory 10444
+Percentile Result: 157
+Query Latency (pread64 Max Latency): 3.543994369s
+Query Latency (pread64 Tail Latency): 1.755117447s
+Records received: 80860160, dropped: 0, total received 3975975936 dropped 0
+Records received: 76468224, dropped: 0, total received 4052444160 dropped 0
+Records received: 78223360, dropped: 0, total received 4130667520 dropped 0
+New timeline block
+Records received: 78917632, dropped: 0, total received 4209585152 dropped 0
+Records received: 78599168, dropped: 0, total received 4288184320 dropped 0
+Records received: 76772352, dropped: 0, total received 4364956672 dropped 0
+Records received: 76953600, dropped: 0, total received 4441910272 dropped 0
+Records received: 80415744, dropped: 0, total received 4522326016 dropped 0
+Records received: 79444992, dropped: 0, total received 4601771008 dropped 0
+Records received: 79153152, dropped: 0, total received 4680924160 dropped 0
+Records received: 79280128, dropped: 0, total received 4760204288 dropped 0
+Records received: 80801792, dropped: 0, total received 4841006080 dropped 0
+Running query 4
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+Indexed timestamp: 601037054
+1. Scanned indexes in 1.113302964s
+2. Scanned 135 records in 1 indexed chunks that may contain a record 191.032µs
+Found entry ts < ts: 600484269 < 601037041
+Scan breaking because we've reached indexed timestamp
+Entry timestamp 601037054 index scan max time 601037054
+3. Scanned 240152 unindexed records after last indexed timestamp 1.239344155s
+Q2 Max 2.352877105s
+Max Result: AggregationU64 { sum: 37581740, count: 15584738, min: 0, max: 47983 }
+Query source: 8542843711054574807
+Index spec: min 0 interval 10
+low bin: 25, bins: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24], high bin: 26
+Bitmap ids: {16, 26, 23, 20, 17, 24, 21, 18, 15, 22, 19}
+>> Query prelude 8.838µs
+1. Scanned all indexes in 144.203661ms
+2. Scanned data chunks that were partially covered by an index in 8.044µs
+Found entry ts < ts: 600484269 < 601037041
+3. Scanned 240152 unindexed records after last indexed timestamp in 78.811792ms
+Curr percentile: 0.9990970653468797
+Curr bin: 26
+Remaining tile points 0.000802934653120313 Remaining count: 12513
+Number of data chunks to scan: 7719
+4. Scanned 14072 records in bucket 26 to find percentile in 2.326426821s. Records in memory 14072
+Percentile Result: 213
+Query Latency (pread64 Max Latency): 2.35287708s
+Query Latency (pread64 Tail Latency): 2.549498104s

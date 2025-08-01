@@ -1,0 +1,159 @@
+Initializing Fishstore
+Starting indexingSuccessfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Setup done... beginning writing
+Ingest paused...
+Starting up 8 ingest threads
+Waiting for a connection
+Got a connection
+Handling conn 4
+Sent start signal, beginning to receive data
+Received: 23001088, Written: 23001088, Dropped: 0, total received 23001088 dropped 0
+Received: 37658624, Written: 37658624, Dropped: 0, total received 60659712 dropped 0
+Received: 37658624, Written: 37658624, Dropped: 0, total received 98318336 dropped 0
+Received: 37779456, Written: 37779456, Dropped: 0, total received 136097792 dropped 0
+Received: 37676032, Written: 37676032, Dropped: 0, total received 173773824 dropped 0
+Received: 38094848, Written: 38094848, Dropped: 0, total received 211868672 dropped 0
+Received: 36512768, Written: 36512768, Dropped: 0, total received 248381440 dropped 0
+Received: 36161536, Written: 36161536, Dropped: 0, total received 284542976 dropped 0
+Received: 38510592, Written: 38510592, Dropped: 0, total received 323053568 dropped 0
+Received: 39485440, Written: 39485440, Dropped: 0, total received 362539008 dropped 0
+Received: 37552128, Written: 37552128, Dropped: 0, total received 400091136 dropped 0
+Received: 38022144, Written: 38022144, Dropped: 0, total received 438113280 dropped 0
+Querying
+Ingest paused...
+Finalizing 50023895 50023895
+Sorting
+Calculating index
+Index: 50018892
+Q1 count 50023895, max 211635, 99.99: 465 
+Got status: 1
+KV scan Tile: 465 Number of u64 in memory: 50023895
+Finalizing 55288975 55288975
+Sorting
+Calculating index
+Index: 55283446
+Q1 count 55288975, max 83177463, 99.99: 30 
+Got status: 1
+Query Latency (Slow Requests): 20.341238 secs 
+Query Latency (Slow sendto Execution): 18.653939 secs 
+Received: 3756032, Written: 3756032, Dropped: 0, total received 441869312 dropped 0
+Received: 37904384, Written: 37904384, Dropped: 0, total received 479773696 dropped 0
+Received: 36634624, Written: 36634624, Dropped: 0, total received 516408320 dropped 0
+Received: 36339712, Written: 36339712, Dropped: 0, total received 552748032 dropped 0
+Received: 37713920, Written: 37713920, Dropped: 0, total received 590461952 dropped 0
+Received: 40083456, Written: 40083456, Dropped: 0, total received 630545408 dropped 0
+Received: 37460992, Written: 37460992, Dropped: 0, total received 668006400 dropped 0
+Received: 38131712, Written: 38131712, Dropped: 0, total received 706138112 dropped 0
+Received: 34485248, Written: 34485248, Dropped: 0, total received 740623360 dropped 0
+Received: 37508096, Written: 37508096, Dropped: 0, total received 778131456 dropped 0
+Received: 37694464, Written: 37694464, Dropped: 0, total received 815825920 dropped 0
+Received: 37798912, Written: 37798912, Dropped: 0, total received 853624832 dropped 0
+Received: 34193408, Written: 34193408, Dropped: 0, total received 887818240 dropped 0
+Querying
+Ingest paused...
+Finalizing 48773625 48773625
+Sorting
+Calculating index
+Index: 48768747
+Q1 count 48773625, max 210312, 99.99: 486 
+Got status: 1
+KV scan Tile: 486 Number of u64 in memory: 48773625
+Finalizing 55835099 55835099
+Sorting
+Calculating index
+Index: 55829515
+Q1 count 55835099, max 108281480, 99.99: 32 
+Got status: 1
+Query Latency (Slow Requests): 20.437874 secs 
+Query Latency (Slow sendto Execution): 18.706581 secs 
+Received: 6516736, Written: 6516736, Dropped: 0, total received 894334976 dropped 0
+Received: 37443584, Written: 37443584, Dropped: 0, total received 931778560 dropped 0
+Received: 38162432, Written: 38162432, Dropped: 0, total received 969940992 dropped 0
+Received: 34341888, Written: 34341888, Dropped: 0, total received 1004282880 dropped 0
+Received: 37511168, Written: 37511168, Dropped: 0, total received 1041794048 dropped 0
+Received: 37685248, Written: 37685248, Dropped: 0, total received 1079479296 dropped 0
+Received: 37788672, Written: 37788672, Dropped: 0, total received 1117267968 dropped 0
+Received: 37846016, Written: 37846016, Dropped: 0, total received 1155113984 dropped 0
+Received: 37918720, Written: 37918720, Dropped: 0, total received 1193032704 dropped 0
+Received: 36965376, Written: 36965376, Dropped: 0, total received 1229998080 dropped 0
+Received: 35895296, Written: 35895296, Dropped: 0, total received 1265893376 dropped 0
+Received: 37005312, Written: 37005312, Dropped: 0, total received 1302898688 dropped 0
+Received: 34731008, Written: 34731008, Dropped: 0, total received 1337629696 dropped 0
+Querying
+Ingest paused...
+Finalizing 49838125 49838125
+Sorting
+Calculating index
+Index: 49833141
+Q1 count 49838125, max 210743, 99.99: 475 
+Got status: 1
+KV scan Tile: 475 Number of u64 in memory: 49838125
+Finalizing 54590039 54590039
+Sorting
+Calculating index
+Index: 54584579
+Q1 count 54590039, max 61105830, 99.99: 30 
+Got status: 1
+Query Latency (Slow Requests): 24.299713 secs 
+Query Latency (Slow sendto Execution): 20.883440 secs 
+Received: 24871936, Written: 24871936, Dropped: 0, total received 1362501632 dropped 0
+Received: 37850112, Written: 37850112, Dropped: 0, total received 1400351744 dropped 0
+Received: 37884928, Written: 37884928, Dropped: 0, total received 1438236672 dropped 0
+Received: 37141504, Written: 37141504, Dropped: 0, total received 1475378176 dropped 0
+Received: 35891200, Written: 35891200, Dropped: 0, total received 1511269376 dropped 0
+Received: 36717568, Written: 36717568, Dropped: 0, total received 1547986944 dropped 0
+Received: 41465856, Written: 41465856, Dropped: 0, total received 1589452800 dropped 0
+Received: 37479424, Written: 37479424, Dropped: 0, total received 1626932224 dropped 0
+Received: 38177792, Written: 38177792, Dropped: 0, total received 1665110016 dropped 0
+Received: 34079744, Written: 34079744, Dropped: 0, total received 1699189760 dropped 0
+Received: 37576704, Written: 37576704, Dropped: 0, total received 1736766464 dropped 0
+Received: 37554176, Written: 37554176, Dropped: 0, total received 1774320640 dropped 0
+Received: 13052928, Written: 13052928, Dropped: 0, total received 1787373568 dropped 0
+Querying
+Ingest paused...
+Finalizing 48907855 48907855
+Sorting
+Calculating index
+Index: 48902964
+Q1 count 48907855, max 211635, 99.99: 468 
+Got status: 1
+KV scan Tile: 468 Number of u64 in memory: 48907855
+Finalizing 55352219 55352219
+Sorting
+Calculating index
+Index: 55346683
+Q1 count 55352219, max 108281480, 99.99: 31 
+Got status: 1
+Query Latency (Slow Requests): 19.151054 secs 
+Query Latency (Slow sendto Execution): 17.982098 secs 
+Received: 34455552, Written: 34455552, Dropped: 0, total received 1821829120 dropped 0
+Received: 41552896, Written: 41552896, Dropped: 0, total received 1863382016 dropped 0
+Received: 37504000, Written: 37504000, Dropped: 0, total received 1900886016 dropped 0
+Received: 38195200, Written: 38195200, Dropped: 0, total received 1939081216 dropped 0
+Received: 33867776, Written: 33867776, Dropped: 0, total received 1972948992 dropped 0
+Received: 37619712, Written: 37619712, Dropped: 0, total received 2010568704 dropped 0
+Received: 37558272, Written: 37558272, Dropped: 0, total received 2048126976 dropped 0
+Received: 37818368, Written: 37818368, Dropped: 0, total received 2085945344 dropped 0
+Received: 37830656, Written: 37830656, Dropped: 0, total received 2123776000 dropped 0
+Received: 37888000, Written: 37888000, Dropped: 0, total received 2161664000 dropped 0
+Received: 37470208, Written: 37470208, Dropped: 0, total received 2199134208 dropped 0
+Received: 35901440, Written: 35901440, Dropped: 0, total received 2235035648 dropped 0
+Received: 2197504, Written: 2197504, Dropped: 0, total received 2237233152 dropped 0
+Querying
+Ingest paused...
+Finalizing 48668351 48668351
+Sorting
+Calculating index
+Index: 48663484
+Q1 count 48668351, max 210743, 99.99: 494 
+Got status: 1
+KV scan Tile: 494 Number of u64 in memory: 48668351
+Finalizing 54801738 54801738
+Sorting
+Calculating index
+Index: 54796257
+Q1 count 54801738, max 46777483, 99.99: 31 
+Got status: 1
+Query Latency (Slow Requests): 19.076000 secs 
+Query Latency (Slow sendto Execution): 17.781493 secs 

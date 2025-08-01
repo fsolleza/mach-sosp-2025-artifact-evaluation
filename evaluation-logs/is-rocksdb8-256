@@ -1,0 +1,55 @@
+Writing for 60s
+Rocksdb ingest scaling with 8 threads
+Elapsed: 60.003957676s, count: 11122688
+Elapsed: 60.00523701s, count: 11103232
+Elapsed: 60.005235023s, count: 11110400
+Elapsed: 60.004757186s, count: 11074560
+Elapsed: 60.00549651s, count: 11059200
+Elapsed: 60.005316189s, count: 11116544
+Elapsed: 60.005332658s, count: 11128832
+Elapsed: 60.005116752s, count: 11453440
+count tp: 1486148.2666666666, bytes rate: 380453956.26666665
+Writing for 60s
+Rocksdb ingest scaling with 8 threads
+Elapsed: 60.005391811s, count: 11124736
+Elapsed: 60.005276347s, count: 11073536
+Elapsed: 60.005094047s, count: 11116544
+Elapsed: 60.005470811s, count: 11128832
+Elapsed: 60.005543421s, count: 11162417
+Elapsed: 60.005732726s, count: 11450368
+Elapsed: 60.005364957s, count: 11091968
+Elapsed: 60.0053704s, count: 11092992
+count tp: 1487356.55, bytes rate: 380763276.8
+Writing for 60s
+Rocksdb ingest scaling with 8 threads
+Elapsed: 60.004504287s, count: 11058176
+Elapsed: 60.004510978s, count: 11232256
+Elapsed: 60.004430816s, count: 11131904
+Elapsed: 60.004315777s, count: 11254784
+Elapsed: 60.004847723s, count: 10979328
+Elapsed: 60.00504674s, count: 11159552
+Elapsed: 60.004580095s, count: 11123712
+Elapsed: 60.004790233s, count: 11252736
+count tp: 1486540.8, bytes rate: 380554444.8
+Writing for 60s
+Rocksdb ingest scaling with 8 threads
+Elapsed: 60.005177645s, count: 11211776
+Elapsed: 60.00493682s, count: 11236352
+Elapsed: 60.004845704s, count: 11039744
+Elapsed: 60.005204397s, count: 11127808
+Elapsed: 60.005048996s, count: 11031552
+Elapsed: 60.005304053s, count: 11140096
+Elapsed: 60.005495586s, count: 11128833
+Elapsed: 60.005061017s, count: 11361280
+count tp: 1487957.35, bytes rate: 380917081.6
+Writing for 60s
+Rocksdb ingest scaling with 8 threads
+Elapsed: 60.003720111s, count: 11225088
+Elapsed: 60.003976955s, count: 11261952
+Elapsed: 60.00356611s, count: 11373568
+Elapsed: 60.003771131s, count: 11320320
+Elapsed: 60.003593678s, count: 11186176
+Elapsed: 60.003571019s, count: 11367424
+Elapsed: 60.003789268s, count: 11291111
+Elapsed: 60.004001154s, count: 11202626
+count tp: 1503804.4166666667, bytes rate: 384973930.6666667

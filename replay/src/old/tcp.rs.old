@@ -1,0 +1,162 @@
+use std::{
+    io::{self, prelude::*},
+	thread,
+	fs::File,
+	sync::atomic::{AtomicU64, AtomicBool, Ordering::SeqCst},
+	sync::{Arc, Barrier},
+};
+use data::record_bytes::RecordBatchBytes;
+use tcp_channel::{TcpTxListener, TcpTx, TcpRx, Error};
+
+use data::record::{RecordBatchesDeserializer};
+use utils::{Instant, Duration};
+
+pub static ADDR: &'static str = "127.0.0.1:7878";
+
+pub struct TcpReplayerClient {
+	tcp_rx: TcpRx
+}
+
+pub struct TcpReplayerRx {
+	tcp_rx: TcpRx
+}
+
+impl TcpReplayerRx {
+	pub fn connect() -> Self {
+		TcpReplayerRx { tcp_rx: TcpRx::connect(ADDR) }
+	}
+
+	pub fn connect_timeout(ts: Duration) -> Result<Self, Error> {
+		Ok(TcpReplayerRx { tcp_rx: TcpRx::connect_timeout(ADDR, ts)? })
+	}
+
+	pub fn start_replayer(&mut self) {
+		self.tcp_rx.start_tx();
+	}
+
+	pub fn next_batch_bytes(&mut self) -> Result<RecordBatchBytes, Error> {
+		Ok(RecordBatchBytes::new(self.tcp_rx.recv()?))
+	}
+}
+
+pub struct TcpReplayerListener {
+	listener: TcpTxListener,
+	file_path: String,
+}
+
+impl TcpReplayerListener {
+	pub fn new(path: &str) -> Self {
+		Self {
+			listener: TcpTxListener::new(ADDR),
+			file_path: path.into(),
+		}
+	}
+
+	pub fn new_replayer(&self) -> TcpReplayer {
+		println!("Waiting for a connection");
+		let mut tcp_tx = self.listener.new_tx();
+		tcp_tx.set_write_timeout(Duration::from_secs(1));
+		println!("Waiting for connection to be ready");
+		tcp_tx.wait_for_rx();
+		TcpReplayer::new(tcp_tx, self.file_path.as_str())
+	}
+}
+
+#[derive(Clone)]
+pub struct TcpReplayer {
+	barrier: Arc<Barrier>,
+	generated: Arc<AtomicU64>,
+	dropped: Arc<AtomicU64>,
+	behind: Arc<AtomicU64>,
+	done: Arc<AtomicBool>,
+}
+
+impl TcpReplayer {
+	pub fn new(tcp_tx: TcpTx, file_path: &str) -> Self {
+		let barrier = Arc::new(Barrier::new(2));
+		let generated = Arc::new(AtomicU64::new(0));
+		let dropped = Arc::new(AtomicU64::new(0));
+		let behind = Arc::new(AtomicU64::new(0));
+		let done = Arc::new(AtomicBool::new(false));
+
+		let barrier2 = barrier.clone();
+		let generated2 = generated.clone();
+		let dropped2 = dropped.clone();
+		let behind2 = behind.clone();
+		let done2 = done.clone();
+
+		let file_path = String::from(file_path);
+		thread::spawn(move || {
+			replay_batches(&file_path, tcp_tx, barrier2, generated2, dropped2, behind2, done2);
+		});
+
+		Self {
+			barrier,
+			dropped,
+			generated,
+			behind,
+			done,
+		}
+	}
+
+	pub fn done(&self) -> bool {
+		self.done.load(SeqCst)
+	}
+
+	pub fn generated(&self) -> u64 {
+		self.generated.load(SeqCst)
+	}
+
+	pub fn dropped(&self) -> u64 {
+		self.dropped.load(SeqCst)
+	}
+
+	pub fn behind(&self) -> u64 {
+		self.behind.load(SeqCst)
+	}
+
+	pub fn start(&self) {
+		self.barrier.wait();
+	}
+}
+
+fn replay_batches(
+	file_path: &str,
+	mut tcp_tx: TcpTx,
+	barrier: Arc<Barrier>,
+	generated: Arc<AtomicU64>,
+	dropped: Arc<AtomicU64>,
+	behind: Arc<AtomicU64>,
+	done: Arc<AtomicBool>
+) {
+	let mut file = File::open(file_path).unwrap();
+	let mut data = Vec::new();
+	let _ = file.read_to_end(&mut data).unwrap();
+	let mut deserializer = RecordBatchesDeserializer::new(data);
+	let now = Instant::now();
+	let mut start_time = u64::MAX;
+
+	barrier.wait();
+	while let Some(bytes) = deserializer.next_batch_bytes() {
+		let batch = RecordBatchBytes::new(bytes);
+		let arrival_us = batch.arrival_us();
+		let batch_len = batch.data_len();
+		if start_time == u64::MAX {
+			start_time = arrival_us;
+		}
+		let d: u64 = arrival_us - start_time;
+
+		if (now.elapsed().as_micros() as u64) > d {
+			behind.fetch_add(1, SeqCst);
+		}
+		while (now.elapsed().as_micros() as u64) < d {}
+		generated.fetch_add(batch_len, SeqCst);
+		if tcp_tx.send(bytes).is_err() {
+			dropped.fetch_add(batch_len, SeqCst);
+		}
+	}
+
+	done.store(true, SeqCst);
+}
+
+

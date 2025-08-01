@@ -1,0 +1,43 @@
+Initializing Fishstore
+Starting indexingSuccessfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Setup done... beginning writing
+Ingest paused...
+Starting up 8 ingest threads
+Waiting for a connection
+Exact indexing lookback of 120 seconds
+Sleeping for 245 seconds
+Got a connection
+Handling conn 4
+Sent start signal, beginning to receive data
+Received: 32585728, Written: 32585728, Dropped: 0, total received 32585728 dropped 0
+Received: 80785408, Written: 80785408, Dropped: 0, total received 113371136 dropped 0
+Received: 80868352, Written: 80868352, Dropped: 0, total received 194239488 dropped 0
+Received: 76432384, Written: 76432384, Dropped: 0, total received 270671872 dropped 0
+Received: 78385152, Written: 78385152, Dropped: 0, total received 349057024 dropped 0
+Received: 78793728, Written: 78793728, Dropped: 0, total received 427850752 dropped 0
+Received: 78669824, Written: 78669824, Dropped: 0, total received 506520576 dropped 0
+Received: 76594176, Written: 76594176, Dropped: 0, total received 583114752 dropped 0
+Received: 77148160, Written: 77148160, Dropped: 0, total received 660262912 dropped 0
+Received: 80053248, Written: 80053248, Dropped: 0, total received 740316160 dropped 0
+Received: 79766528, Written: 79766528, Dropped: 0, total received 820082688 dropped 0
+Received: 79185920, Written: 79185920, Dropped: 0, total received 899268608 dropped 0
+Received: 79208448, Written: 79208448, Dropped: 0, total received 978477056 dropped 0
+Received: 80772096, Written: 80772096, Dropped: 0, total received 1059249152 dropped 0
+Received: 80870400, Written: 80870400, Dropped: 0, total received 1140119552 dropped 0
+Received: 76438528, Written: 76438528, Dropped: 0, total received 1216558080 dropped 0
+Received: 78385152, Written: 78385152, Dropped: 0, total received 1294943232 dropped 0
+Received: 78788608, Written: 78788608, Dropped: 0, total received 1373731840 dropped 0
+Received: 78675968, Written: 78675968, Dropped: 0, total received 1452407808 dropped 0
+Received: 76589056, Written: 76589056, Dropped: 0, total received 1528996864 dropped 0
+Received: 77154304, Written: 77154304, Dropped: 0, total received 1606151168 dropped 0
+Received: 80052224, Written: 80052224, Dropped: 0, total received 1686203392 dropped 0
+Received: 79768576, Written: 79768576, Dropped: 0, total received 1765971968 dropped 0
+Received: 79186944, Written: 79186944, Dropped: 0, total received 1845158912 dropped 0
+Max ts: 1754075286595263
+min ts: 1754075166595263
+Got status: 1
+Finalizing Microbench 3 max count 54402
+Done with complete pending
+Result: 54402
+Scan done in 3.885519 secs

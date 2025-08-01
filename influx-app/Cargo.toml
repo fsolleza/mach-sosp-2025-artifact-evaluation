@@ -1,0 +1,16 @@
+[package]
+name = "influx-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossbeam = { workspace = true }
+data = { workspace = true }
+utils = { workspace = true }
+clap = { workspace = true }
+mach-lib = { workspace = true }
+tokio = { workspace = true }
+reqwest = { version = "0.12.9", features = ["blocking", "json"] }
+chrono = { workspace = true }
+serde_json = { workspace = true }
+questdb-rs = { workspace = true }

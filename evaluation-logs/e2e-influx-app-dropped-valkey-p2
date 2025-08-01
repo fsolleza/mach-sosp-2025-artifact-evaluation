@@ -1,0 +1,216 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 17297408, written: 10574848, total received 17297408 dropped 6722560
+Records received: 37513216, written: 4987904, total received 54810624 dropped 39247872
+Records received: 37706752, written: 5041152, total received 92517376 dropped 71913472
+Records received: 37792768, written: 5098496, total received 130310144 dropped 104607744
+Records received: 37847040, written: 5168128, total received 168157184 dropped 137286656
+Records received: 37861376, written: 5257216, total received 206018560 dropped 169890816
+Records received: 36831232, written: 5190656, total received 242849792 dropped 201531392
+Records received: 36184064, written: 5180416, total received 279033856 dropped 232535040
+Records received: 37369856, written: 5233664, total received 316403712 dropped 264671232
+Records received: 40569856, written: 5126144, total received 356973568 dropped 300114944
+Records received: 37428224, written: 5167104, total received 394401792 dropped 332376064
+min 2025-08-01T07:17:38.142518000Z max 2025-08-01T07:18:38.142518000Z
+Executing query 0
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:17:38.142518000Z'
+			AND time <= '2025-08-01T07:18:38.142518000Z'
+Records received: 38163456, written: 5264384, total received 432565248 dropped 365275136
+Records received: 34374656, written: 4281344, total received 466939904 dropped 395368448
+471
+Doing query: SELECT COUNT(pid)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND duration_us > 471
+			AND time >= '2025-08-01T07:17:38.142518000Z'
+			AND time <= '2025-08-01T07:18:38.142518000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND time >= '2025-08-01T07:17:38.142518000Z'
+			AND time <= '2025-08-01T07:18:38.142518000Z'
+Records received: 37494784, written: 4229120, total received 504434688 dropped 428634112
+Doing query: SELECT COUNT(pid)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND duration_us > 30
+			AND time >= '2025-08-01T07:17:38.142518000Z'
+			AND time <= '2025-08-01T07:18:38.142518000Z'
+Records received: 37692416, written: 4079616, total received 542127104 dropped 462246912
+Query Latency (Slow Requests): 16.443237322s
+Query Latency (Slow sendto Execution): 20.292643244s
+Records received: 37779456, written: 5354496, total received 579906560 dropped 494671872
+Records received: 37856256, written: 5284864, total received 617762816 dropped 527243264
+Records received: 37922816, written: 5021696, total received 655685632 dropped 560144384
+Records received: 36939776, written: 5317632, total received 692625408 dropped 591766528
+Records received: 35898368, written: 5283840, total received 728523776 dropped 622381056
+Records received: 37074944, written: 5307392, total received 765598720 dropped 654148608
+Records received: 41120768, written: 5266432, total received 806719488 dropped 690002944
+Records received: 37451776, written: 5321728, total received 844171264 dropped 722132992
+Records received: 38195200, written: 5248000, total received 882366464 dropped 755080192
+Records received: 34206720, written: 5317632, total received 916573184 dropped 783969280
+Records received: 37540864, written: 5456896, total received 954114048 dropped 816053248
+Records received: 37625856, written: 5321728, total received 991739904 dropped 848357376
+min 2025-08-01T07:20:15.027050000Z max 2025-08-01T07:21:15.027050000Z
+Executing query 1
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:20:15.027050000Z'
+			AND time <= '2025-08-01T07:21:15.027050000Z'
+Records received: 37811200, written: 5127168, total received 1029551104 dropped 881041408
+Records received: 37724160, written: 4376576, total received 1067275264 dropped 914388992
+463
+Doing query: SELECT COUNT(pid)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND duration_us > 463
+			AND time >= '2025-08-01T07:20:15.027050000Z'
+			AND time <= '2025-08-01T07:21:15.027050000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND time >= '2025-08-01T07:20:15.027050000Z'
+			AND time <= '2025-08-01T07:21:15.027050000Z'
+Records received: 38000640, written: 3567616, total received 1105275904 dropped 948822016
+Doing query: SELECT COUNT(pid)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND duration_us > 31
+			AND time >= '2025-08-01T07:20:15.027050000Z'
+			AND time <= '2025-08-01T07:21:15.027050000Z'
+Records received: 37114880, written: 5550080, total received 1142390784 dropped 980386816
+Query Latency (Slow Requests): 14.570602675s
+Query Latency (Slow sendto Execution): 18.77154093s
+Records received: 35900416, written: 5262336, total received 1178291200 dropped 1011024896
+Records received: 36752384, written: 5276672, total received 1215043584 dropped 1042500608
+Records received: 41433088, written: 5312512, total received 1256476672 dropped 1078621184
+Records received: 37468160, written: 5296128, total received 1293944832 dropped 1110793216
+Records received: 38182912, written: 5348352, total received 1332127744 dropped 1143627776
+Records received: 34112512, written: 5305344, total received 1366240256 dropped 1172434944
+Records received: 37553152, written: 4606976, total received 1403793408 dropped 1205381120
+Records received: 37560320, written: 4252672, total received 1441353728 dropped 1238688768
+Records received: 37798912, written: 4462592, total received 1479152640 dropped 1272025088
+Records received: 37854208, written: 4189184, total received 1517006848 dropped 1305690112
+Records received: 37903360, written: 4348928, total received 1554910208 dropped 1339244544
+Records received: 37279744, written: 4294656, total received 1592189952 dropped 1372229632
+min 2025-08-01T07:22:44.715208000Z max 2025-08-01T07:23:44.715208000Z
+Executing query 2
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:22:44.715208000Z'
+			AND time <= '2025-08-01T07:23:44.715208000Z'
+Records received: 35879936, written: 3420160, total received 1628069888 dropped 1404689408
+475
+Doing query: SELECT COUNT(pid)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND duration_us > 475
+			AND time >= '2025-08-01T07:22:44.715208000Z'
+			AND time <= '2025-08-01T07:23:44.715208000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND time >= '2025-08-01T07:22:44.715208000Z'
+			AND time <= '2025-08-01T07:23:44.715208000Z'
+Records received: 36584448, written: 2778112, total received 1664654336 dropped 1438495744
+Doing query: SELECT COUNT(pid)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND duration_us > 32
+			AND time >= '2025-08-01T07:22:44.715208000Z'
+			AND time <= '2025-08-01T07:23:44.715208000Z'
+Records received: 41567232, written: 4252672, total received 1706221568 dropped 1475810304
+Query Latency (Slow Requests): 12.894428221s
+Query Latency (Slow sendto Execution): 18.045081092s
+Records received: 37495808, written: 4347904, total received 1743717376 dropped 1508958208
+Records received: 38190080, written: 4162560, total received 1781907456 dropped 1542985728
+Records received: 33911808, written: 4932608, total received 1815819264 dropped 1571964928
+Records received: 37591040, written: 5212160, total received 1853410304 dropped 1604343808
+Records received: 37564416, written: 5145600, total received 1890974720 dropped 1636762624
+Records received: 37815296, written: 5160960, total received 1928790016 dropped 1669416960
+Records received: 37837824, written: 5199872, total received 1966627840 dropped 1702054912
+Records received: 37885952, written: 5145600, total received 2004513792 dropped 1734795264
+Records received: 37453824, written: 5171200, total received 2041967616 dropped 1767077888
+Records received: 35885056, written: 5165056, total received 2077852672 dropped 1797797888
+Records received: 36542464, written: 5215232, total received 2114395136 dropped 1829125120
+Records received: 41559040, written: 5253120, total received 2155954176 dropped 1865431040
+min 2025-08-01T07:25:19.024246000Z max 2025-08-01T07:26:19.024246000Z
+Executing query 3
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:25:19.024246000Z'
+			AND time <= '2025-08-01T07:26:19.024246000Z'
+Records received: 37517312, written: 4178944, total received 2193471488 dropped 1898769408
+535
+Doing query: SELECT COUNT(pid)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND duration_us > 535
+			AND time >= '2025-08-01T07:25:19.024246000Z'
+			AND time <= '2025-08-01T07:26:19.024246000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND time >= '2025-08-01T07:25:19.024246000Z'
+			AND time <= '2025-08-01T07:26:19.024246000Z'
+Records received: 38204416, written: 3918848, total received 2231675904 dropped 1933054976
+Doing query: SELECT COUNT(pid)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND duration_us > 31
+			AND time >= '2025-08-01T07:25:19.024246000Z'
+			AND time <= '2025-08-01T07:26:19.024246000Z'
+Records received: 34172928, written: 4103168, total received 2265848832 dropped 1963124736
+Query Latency (Slow Requests): 14.57596098s
+Query Latency (Slow sendto Execution): 20.455868528s
+Records received: 37177344, written: 5380096, total received 2303026176 dropped 1994921984
+Records received: 37543936, written: 5160960, total received 2340570112 dropped 2027304960
+Records received: 37823488, written: 5271552, total received 2378393600 dropped 2059856896
+Records received: 37851136, written: 5270528, total received 2416244736 dropped 2092437504
+Records received: 37545984, written: 5252096, total received 2453790720 dropped 2124731392
+Records received: 37935104, written: 5280768, total received 2491725824 dropped 2157385728
+Records received: 35933184, written: 5298176, total received 2527659008 dropped 2188020736
+Records received: 36447232, written: 5276672, total received 2564106240 dropped 2219191296
+Records received: 41153536, written: 5326848, total received 2605259776 dropped 2255017984
+Records received: 37961728, written: 5314560, total received 2643221504 dropped 2287665152
+Records received: 38239232, written: 5299200, total received 2681460736 dropped 2320605184
+Records received: 35443712, written: 5382144, total received 2716904448 dropped 2350666752
+min 2025-08-01T07:27:54.517427000Z max 2025-08-01T07:28:54.517427000Z
+Executing query 4
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:27:54.517427000Z'
+			AND time <= '2025-08-01T07:28:54.517427000Z'
+Records received: 35751936, written: 5086208, total received 2752656384 dropped 2381332480
+Records received: 37510144, written: 4328448, total received 2790166528 dropped 2414514176
+464
+Doing query: SELECT COUNT(pid)
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND duration_us > 464
+			AND time >= '2025-08-01T07:27:54.517427000Z'
+			AND time <= '2025-08-01T07:28:54.517427000Z'
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND time >= '2025-08-01T07:27:54.517427000Z'
+			AND time <= '2025-08-01T07:28:54.517427000Z'
+Records received: 37843968, written: 3613696, total received 2828010496 dropped 2448744448
+Doing query: SELECT COUNT(pid)
+			FROM syscall_event
+			WHERE source = 'id-10933099616224822270'
+			AND duration_us > 30
+			AND time >= '2025-08-01T07:27:54.517427000Z'
+			AND time <= '2025-08-01T07:28:54.517427000Z'
+Records received: 37829632, written: 5051392, total received 2865840128 dropped 2481522688
+Query Latency (Slow Requests): 14.498898296s
+Query Latency (Slow sendto Execution): 21.37870702s

@@ -1,0 +1,135 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 7168, written: 7168, total received 7168 dropped 0
+Records received: 64254208, written: 14134272, total received 64261376 dropped 50119936
+Records received: 63153408, written: 4682240, total received 127414784 dropped 108591104
+Records received: 54445312, written: 5050624, total received 181860096 dropped 157985792
+Records received: 52258304, written: 5077248, total received 234118400 dropped 205166848
+Records received: 52057600, written: 5162496, total received 286176000 dropped 252061952
+Records received: 50765568, written: 5016320, total received 336941568 dropped 297811200
+Records received: 52433664, written: 5099008, total received 389375232 dropped 345145856
+Records received: 48985600, written: 5063424, total received 438360832 dropped 389068032
+Records received: 49997568, written: 4982016, total received 488358400 dropped 434083584
+Records received: 49283328, written: 4990976, total received 537641728 dropped 478375936
+min 2025-08-01T07:31:45.316008000Z max 2025-08-01T07:32:45.316008000Z
+Executing query 0
+Doing query: SELECT MAX(duration_us), *
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:31:45.316008000Z'
+			AND time <= '2025-08-01T07:32:45.316008000Z'
+Records received: 51892224, written: 5107456, total received 589533952 dropped 525160704
+Doing query: SELECT COUNT(dst_port)
+			FROM packet
+			WHERE source = 'id-17615343019692007359'
+			AND time >= '2025-08-01T07:32:36.254767902Z'
+			AND time <= '2025-08-01T07:32:46.254767902Z'
+Query Latency (Maximum Latency Request): 655.809692ms
+Query Latency (TCP Packet scan): 1.820521988s
+Records received: 51751936, written: 4881152, total received 641285888 dropped 572031488
+Records received: 62119424, written: 5092608, total received 703405312 dropped 629058304
+Records received: 64350464, written: 5038848, total received 767755776 dropped 688369920
+Records received: 54859776, written: 4971008, total received 822615552 dropped 738258688
+Records received: 52003328, written: 5267456, total received 874618880 dropped 784994560
+Records received: 52257536, written: 5051392, total received 926876416 dropped 832200704
+Records received: 50541824, written: 5084672, total received 977418240 dropped 877657856
+Records received: 52557056, written: 4530432, total received 1029975296 dropped 925684480
+Records received: 49101568, written: 4304128, total received 1079076864 dropped 970481920
+Records received: 49972736, written: 4323328, total received 1129049600 dropped 1016131328
+Records received: 49085440, written: 4369152, total received 1178135040 dropped 1060847616
+Records received: 51999232, written: 4294912, total received 1230134272 dropped 1108551936
+min 2025-08-01T07:33:44.795359000Z max 2025-08-01T07:34:44.795359000Z
+Executing query 1
+Doing query: SELECT MAX(duration_us), *
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:33:44.795359000Z'
+			AND time <= '2025-08-01T07:34:44.795359000Z'
+Doing query: SELECT COUNT(dst_port)
+			FROM packet
+			WHERE source = 'id-17615343019692007359'
+			AND time >= '2025-08-01T07:33:42.509632389Z'
+			AND time <= '2025-08-01T07:33:52.509632389Z'
+Query Latency (Maximum Latency Request): 464.42721ms
+Query Latency (TCP Packet scan): 2.732984696s
+Records received: 51646208, written: 4427520, total received 1281780480 dropped 1155770624
+Records received: 61369856, written: 4209152, total received 1343150336 dropped 1212931328
+Records received: 64361472, written: 4356864, total received 1407511808 dropped 1272935936
+Records received: 55678464, written: 4322560, total received 1463190272 dropped 1324291840
+Records received: 51891712, written: 4402688, total received 1515081984 dropped 1371780864
+Records received: 52485376, written: 4390144, total received 1567567360 dropped 1419876096
+Records received: 50430208, written: 4265728, total received 1617997568 dropped 1466040576
+Records received: 52628992, written: 4446720, total received 1670626560 dropped 1514222848
+Records received: 49273344, written: 4354048, total received 1719899904 dropped 1559142144
+Records received: 49810432, written: 4359168, total received 1769710336 dropped 1604593408
+Records received: 49161728, written: 4268544, total received 1818872064 dropped 1649486592
+Records received: 51747328, written: 4340992, total received 1870619392 dropped 1696892928
+min 2025-08-01T07:35:47.969486000Z max 2025-08-01T07:36:47.969486000Z
+Executing query 2
+Doing query: SELECT MAX(duration_us), *
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:35:47.969486000Z'
+			AND time <= '2025-08-01T07:36:47.969486000Z'
+Doing query: SELECT COUNT(dst_port)
+			FROM packet
+			WHERE source = 'id-17615343019692007359'
+			AND time >= '2025-08-01T07:36:38.082766072Z'
+			AND time <= '2025-08-01T07:36:48.082766072Z'
+Query Latency (Maximum Latency Request): 349.581063ms
+Query Latency (TCP Packet scan): 1.4327645s
+Records received: 51717120, written: 4446720, total received 1922336512 dropped 1744163328
+Records received: 60956928, written: 4326144, total received 1983293440 dropped 1800794112
+Records received: 63460096, written: 4408320, total received 2046753536 dropped 1859845888
+Records received: 56304640, written: 4286208, total received 2103058176 dropped 1911864320
+Records received: 52355840, written: 4357888, total received 2155414016 dropped 1959862272
+Records received: 52866560, written: 4251904, total received 2208280576 dropped 2008476928
+Records received: 50244864, written: 4272384, total received 2258525440 dropped 2054449408
+Records received: 52785920, written: 4462848, total received 2311311360 dropped 2102772480
+Records received: 49516032, written: 4317952, total received 2360827392 dropped 2147970560
+Records received: 49452288, written: 4326144, total received 2410279680 dropped 2193096704
+Records received: 49384960, written: 4425472, total received 2459664640 dropped 2238056192
+Records received: 51352320, written: 4398336, total received 2511016960 dropped 2285010176
+min 2025-08-01T07:37:49.947330000Z max 2025-08-01T07:38:49.947330000Z
+Executing query 3
+Doing query: SELECT MAX(duration_us), *
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:37:49.947330000Z'
+			AND time <= '2025-08-01T07:38:49.947330000Z'
+Doing query: SELECT COUNT(dst_port)
+			FROM packet
+			WHERE source = 'id-17615343019692007359'
+			AND time >= '2025-08-01T07:38:17.084437417Z'
+			AND time <= '2025-08-01T07:38:27.084437417Z'
+Query Latency (Maximum Latency Request): 422.008078ms
+Query Latency (TCP Packet scan): 1.461357132s
+Records received: 51833088, written: 4453632, total received 2562850048 dropped 2332389632
+Records received: 59837696, written: 4414464, total received 2622687744 dropped 2387812864
+Records received: 63672320, written: 4318720, total received 2686360064 dropped 2447166464
+Records received: 56270080, written: 4453120, total received 2742630144 dropped 2498983424
+Records received: 53188096, written: 4363264, total received 2795818240 dropped 2547808256
+Records received: 53250816, written: 4452096, total received 2849069056 dropped 2596606976
+Records received: 50114816, written: 4350464, total received 2899183872 dropped 2642371328
+Records received: 52764416, written: 4390912, total received 2951948288 dropped 2690744832
+Records received: 49977856, written: 4321280, total received 3001926144 dropped 2736401408
+Records received: 48934656, written: 4592384, total received 3050860800 dropped 2780743680
+Records received: 49666560, written: 4401152, total received 3100527360 dropped 2826009088
+Records received: 51102208, written: 4363776, total received 3151629568 dropped 2872747520
+min 2025-08-01T07:39:52.059780000Z max 2025-08-01T07:40:52.059780000Z
+Executing query 4
+Doing query: SELECT MAX(duration_us), *
+			FROM kvlog
+			WHERE source = 'id-0'
+			AND time >= '2025-08-01T07:39:52.059780000Z'
+			AND time <= '2025-08-01T07:40:52.059780000Z'
+Doing query: SELECT COUNT(dst_port)
+			FROM packet
+			WHERE source = 'id-17615343019692007359'
+			AND time >= '2025-08-01T07:40:17.904822417Z'
+			AND time <= '2025-08-01T07:40:27.904822417Z'
+Records received: 51763712, written: 4567296, total received 3203393280 dropped 2919943936
+Query Latency (Maximum Latency Request): 362.607406ms
+Query Latency (TCP Packet scan): 1.334799015s

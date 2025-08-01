@@ -1,0 +1,12 @@
+[package]
+name = "ingest-scaling"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { workspace = true }
+rand = { workspace = true }
+mach-lib = { workspace = true }
+utils = { workspace = true }
+rocksdb = "0.22"
+heed = "0.21.0"

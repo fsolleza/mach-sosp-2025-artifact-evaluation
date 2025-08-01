@@ -1,0 +1,58 @@
+Launching listener thread
+Establishing connection to influx and setting up database
+Initializing ingest tasks
+Records received: 0, written: 0, total received 0 dropped 0
+Records received: 6136832, written: 6136832, total received 6136832 dropped 0
+Records received: 9681920, written: 9681920, total received 15818752 dropped 0
+Records received: 9597952, written: 9597952, total received 25416704 dropped 0
+Records received: 9643008, written: 9643008, total received 35059712 dropped 0
+Records received: 9639936, written: 9639936, total received 44699648 dropped 0
+Records received: 9648128, written: 9648128, total received 54347776 dropped 0
+Records received: 9613312, written: 9613312, total received 63961088 dropped 0
+Records received: 9675776, written: 9675776, total received 73636864 dropped 0
+Records received: 9664512, written: 9664512, total received 83301376 dropped 0
+Records received: 9625600, written: 9625600, total received 92926976 dropped 0
+Records received: 9710592, written: 9710592, total received 102637568 dropped 0
+Sleeping in complete data query done
+Waiting for complete data to be loaded
+Remaining: 18691665us to ingest
+Remaining: 17992950us to ingest
+Remaining: 17346778us to ingest
+Remaining: 16666368us to ingest
+Remaining: 16024493us to ingest
+Remaining: 15355875us to ingest
+Remaining: 14703103us to ingest
+Remaining: 14010930us to ingest
+Remaining: 13353948us to ingest
+Remaining: 12650254us to ingest
+Remaining: 11970311us to ingest
+Remaining: 11272067us to ingest
+Remaining: 10593618us to ingest
+Remaining: 9898114us to ingest
+Remaining: 9261861us to ingest
+Remaining: 8590124us to ingest
+Remaining: 7905504us to ingest
+Remaining: 7221314us to ingest
+Remaining: 6579844us to ingest
+Remaining: 5881947us to ingest
+Remaining: 5260543us to ingest
+Remaining: 4565281us to ingest
+Remaining: 3899280us to ingest
+Remaining: 3217578us to ingest
+Remaining: 2568132us to ingest
+Remaining: 1857876us to ingest
+Remaining: 1202578us to ingest
+Remaining: 526108us to ingest
+Done waiting. We waited for 28.003422246s
+Doing query: SELECT PERCENTILE(duration_us, 99.99)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND time >= '2025-08-01T10:14:10.223783000Z'
+		AND time <= '2025-08-01T10:15:10.223783000Z'
+Doing query: SELECT COUNT(pid)
+		FROM kvlog
+		WHERE source = 'id-0'
+		AND duration_us > 473
+		AND time >= '2025-08-01T10:14:10.223783000Z'
+		AND time <= '2025-08-01T10:15:10.223783000Z'
+Query Latency (Slow Requests): 88.634827108s

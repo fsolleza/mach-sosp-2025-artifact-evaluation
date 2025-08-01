@@ -1,0 +1,16 @@
+[package]
+name = "mach-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossbeam = { workspace = true }
+data = { workspace = true }
+utils = { workspace = true }
+clap = { workspace = true }
+mach-lib = { workspace = true }
+core_affinity = { workspace = true }
+fxhash = { workspace = true }
+
+[features]
+ramdisk = ["mach-lib/ramdisk"]

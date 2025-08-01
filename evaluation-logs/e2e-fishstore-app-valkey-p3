@@ -1,0 +1,115 @@
+Initializing Fishstore
+Starting indexingSuccessfully load library at /home/fsolleza/Repositories/mach-sosp-2025/mach-v2/third-party/FishStore/build/Release/./libpsf_lib.so..
+Safe 64, Unsafe 64
+Setup done... beginning writing
+Ingest paused...
+Starting up 8 ingest threads
+Waiting for a connection
+Got a connection
+Handling conn 4
+Sent start signal, beginning to receive data
+Received: 16123648, Written: 16123648, Dropped: 0, total received 16123648 dropped 0
+Received: 67047936, Written: 67047936, Dropped: 0, total received 83171584 dropped 0
+Received: 58579200, Written: 58579200, Dropped: 0, total received 141750784 dropped 0
+Received: 53674752, Written: 53674752, Dropped: 0, total received 195425536 dropped 0
+Received: 53892608, Written: 53892608, Dropped: 0, total received 249318144 dropped 0
+Received: 50351872, Written: 50351872, Dropped: 0, total received 299670016 dropped 0
+Received: 51410176, Written: 51410176, Dropped: 0, total received 351080192 dropped 0
+Received: 52283904, Written: 52283904, Dropped: 0, total received 403364096 dropped 0
+Received: 48354816, Written: 48354816, Dropped: 0, total received 451718912 dropped 0
+Received: 50040576, Written: 50040576, Dropped: 0, total received 501759488 dropped 0
+Received: 49708544, Written: 49708544, Dropped: 0, total received 551468032 dropped 0
+Received: 52062464, Written: 52062464, Dropped: 0, total received 603530496 dropped 0
+Querying
+Ingest paused...
+Finalizing Valkey 3 max count 34704760, max 211657
+Got status: 1
+Finalizing Valkey 3 max count 25699840
+Got status: 1
+Query Latency (Maximum Latency Request): 19.509479 secs 
+Query Latency (TCP Packet Dump): 30.253837 secs 
+Received: 1177344, Written: 1177344, Dropped: 0, total received 604707840 dropped 0
+Received: 51304192, Written: 51304192, Dropped: 0, total received 656012032 dropped 0
+Received: 52231680, Written: 52231680, Dropped: 0, total received 708243712 dropped 0
+Received: 48555520, Written: 48555520, Dropped: 0, total received 756799232 dropped 0
+Received: 50036480, Written: 50036480, Dropped: 0, total received 806835712 dropped 0
+Received: 49698304, Written: 49698304, Dropped: 0, total received 856534016 dropped 0
+Received: 51887360, Written: 51887360, Dropped: 0, total received 908421376 dropped 0
+Received: 50847232, Written: 50847232, Dropped: 0, total received 959268608 dropped 0
+Received: 66422016, Written: 66422016, Dropped: 0, total received 1025690624 dropped 0
+Received: 61496320, Written: 61496320, Dropped: 0, total received 1087186944 dropped 0
+Received: 53977344, Written: 53977344, Dropped: 0, total received 1141164288 dropped 0
+Received: 52608768, Written: 52608768, Dropped: 0, total received 1193773056 dropped 0
+Received: 50480640, Written: 50480640, Dropped: 0, total received 1244253696 dropped 0
+Querying
+Ingest paused...
+Finalizing Valkey 3 max count 36769786, max 211930
+Got status: 1
+Finalizing Valkey 3 max count 20031754
+Got status: 1
+Query Latency (Maximum Latency Request): 23.090441 secs 
+Query Latency (TCP Packet Dump): 34.655646 secs 
+Received: 11386624, Written: 11386624, Dropped: 0, total received 1255640320 dropped 0
+Received: 65651712, Written: 65651712, Dropped: 0, total received 1321292032 dropped 0
+Received: 62752512, Written: 62752512, Dropped: 0, total received 1384044544 dropped 0
+Received: 54342400, Written: 54342400, Dropped: 0, total received 1438386944 dropped 0
+Received: 52325120, Written: 52325120, Dropped: 0, total received 1490712064 dropped 0
+Received: 51961088, Written: 51961088, Dropped: 0, total received 1542673152 dropped 0
+Received: 50826240, Written: 50826240, Dropped: 0, total received 1593499392 dropped 0
+Received: 52414976, Written: 52414976, Dropped: 0, total received 1645914368 dropped 0
+Received: 48916736, Written: 48916736, Dropped: 0, total received 1694831104 dropped 0
+Received: 50034432, Written: 50034432, Dropped: 0, total received 1744865536 dropped 0
+Received: 49293312, Written: 49293312, Dropped: 0, total received 1794158848 dropped 0
+Received: 51918848, Written: 51918848, Dropped: 0, total received 1846077696 dropped 0
+Received: 38689024, Written: 38689024, Dropped: 0, total received 1884766720 dropped 0
+Querying
+Ingest paused...
+Finalizing Valkey 3 max count 34494954, max 211930
+Got status: 1
+Finalizing Valkey 3 max count 19616328
+Got status: 1
+Query Latency (Maximum Latency Request): 21.902344 secs 
+Query Latency (TCP Packet Dump): 32.046581 secs 
+Received: 44958464, Written: 44958464, Dropped: 0, total received 1929725184 dropped 0
+Received: 49065472, Written: 49065472, Dropped: 0, total received 1978790656 dropped 0
+Received: 49985024, Written: 49985024, Dropped: 0, total received 2028775680 dropped 0
+Received: 49362944, Written: 49362944, Dropped: 0, total received 2078138624 dropped 0
+Received: 51719936, Written: 51719936, Dropped: 0, total received 2129858560 dropped 0
+Received: 51684096, Written: 51684096, Dropped: 0, total received 2181542656 dropped 0
+Received: 61359616, Written: 61359616, Dropped: 0, total received 2242902272 dropped 0
+Received: 64807168, Written: 64807168, Dropped: 0, total received 2307709440 dropped 0
+Received: 55401216, Written: 55401216, Dropped: 0, total received 2363110656 dropped 0
+Received: 51809536, Written: 51809536, Dropped: 0, total received 2414920192 dropped 0
+Received: 52344064, Written: 52344064, Dropped: 0, total received 2467264256 dropped 0
+Received: 50493952, Written: 50493952, Dropped: 0, total received 2517758208 dropped 0
+Received: 7621632, Written: 7621632, Dropped: 0, total received 2525379840 dropped 0
+Querying
+Ingest paused...
+Finalizing Valkey 3 max count 37013815, max 209768
+Got status: 1
+Finalizing Valkey 3 max count 26432000
+Got status: 1
+Query Latency (Maximum Latency Request): 23.894289 secs 
+Query Latency (TCP Packet Dump): 35.658904 secs 
+Received: 57883904, Written: 57883904, Dropped: 0, total received 2583263744 dropped 0
+Received: 56133632, Written: 56133632, Dropped: 0, total received 2639397376 dropped 0
+Received: 52177664, Written: 52177664, Dropped: 0, total received 2691575040 dropped 0
+Received: 52749312, Written: 52749312, Dropped: 0, total received 2744324352 dropped 0
+Received: 50270464, Written: 50270464, Dropped: 0, total received 2794594816 dropped 0
+Received: 52782080, Written: 52782080, Dropped: 0, total received 2847376896 dropped 0
+Received: 49414912, Written: 49414912, Dropped: 0, total received 2896791808 dropped 0
+Received: 49614336, Written: 49614336, Dropped: 0, total received 2946406144 dropped 0
+Received: 49302528, Written: 49302528, Dropped: 0, total received 2995708672 dropped 0
+Received: 51406336, Written: 51406336, Dropped: 0, total received 3047115008 dropped 0
+Received: 51851776, Written: 51851776, Dropped: 0, total received 3098966784 dropped 0
+Failed to read from conn 4
+Done handling conn 4
+Received: 15037952, Written: 15037952, Dropped: 0, total received 3114004736 dropped 0
+Ingest paused...
+Querying
+Finalizing Valkey 3 max count 34475025, max 211930
+Got status: 1
+Finalizing Valkey 3 max count 24663040
+Got status: 1
+Query Latency (Maximum Latency Request): 20.739664 secs 
+Query Latency (TCP Packet Dump): 29.591527 secs 
