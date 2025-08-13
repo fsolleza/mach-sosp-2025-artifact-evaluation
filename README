@@ -15,33 +15,76 @@ System.
 This repository will still reference the system as Mach. The open source
 repository available after publication will change this name to Loom.
 
-####################
-SYSTEMS INSTALLATION
-####################
+###################################
+DEPENDENCIES / SYSTEMS INSTALLATION
+###################################
 
-Influxdb
---------
+Dependencies
+------------
 
-Note:
+- Install the following dependencies to your system:
 
-We use is InfluxDB 1.7 because this is also used by TSM-Bench [18] and has
-higher ingest throughput than newer versions (e.g., InfluxDB 2).
+  cmake,
+  libaio,
+  libuuid,
+  tbb,
+  rust + cargo,
+  protobuf
 
-- install go 1.12 or 1.13
+- One evaluation also loads eBPF programs so you will need to ensure you can
+  load and run eBPF programs in your kernel (installation process is kernel
+  dependent). We do not expect the required eBPF functionality to differ between
+  kernel versions. Here are our requirements (Ubuntu 22.04.3 LTS)
+
+  libbpf-dev
+  llvm
+  clang
+  build-essential
+  linux-tools-$(uname -r)
+  linux-headers-$(uname -r)
+  bpftool
+
+Golang
+------
+
+- To install Golang, first download the appropriate tar file from this webpage:
+  https://go.dev/dl/ to a directory (e.g., /home/[user])
+
+$ cd /home/[user]
+$ mkdir -p [directory]
+$ tar -C [directory] -xzf go1.24.6.linux-amd64.tar.gz
+$ export PATH=$PATH:[directory]/go/bin
+$ go version
+
+- You can permanently add [directory] to your PATH by adding the
+  export command to your shell's rc file (e.g., .bashrc)
+
+- install go version 1.12
 
 $ go install golang.org/dl/go1.12@latest
 $ go1.12 download
 $ go1.12 get github.com/golang/dep/cmd/dep
 
-- setup go path for this install
+InfluxDB
+--------
+
+We use is InfluxDB 1.7 because this is also used by TSM-Bench [18] and has
+higher ingest throughput than newer versions (e.g., InfluxDB 2).
+
+- setup GOPATH for this install.
 
 $ mkdir $HOME/gocodez
 $ export GOPATH=$HOME/gocodez
 
+- You can permanently add this GOPATH by adding it to your shell's rc file
+  (e.g., .bashrc)
+
 - pull repo, checkout influxdb 1.7.1
+
 $ mkdir -p $GOPATH/src/github.com/influxdata
 $ cd $GOPATH/src/github.com/influxdata
 $ git clone https://github.com/influxdata/influxdb.git
+$ cd influxdb
 $ git checkout tags/v1.7.10
 
 - You need to run this command to do dependency stuff ¯\_(ツ)_/¯
@@ -83,7 +126,26 @@ Running the commands below will replace these files.
 End to end evaluations (Figs 10, 11, 12)
 ########################################
 
-- Update paths in the Makefile
+Space and CPU usage
+-------------------
+
+These evaluations generate a large amount of data and write quickly to
+persistent storage. The TMP_DATA_DIR directory specified in the Makefile will
+contain up to 350 gigabytes of data.
+
+The Makefile also pins processes to CPUs. CPU pinning separates any replay
+workload from the evaluation workload. In our machine, we pin CPUs in the
+following way:
+
+Replay workload: 50-55
+InfluxDB daemon and app: 0-40
+Fishstore app: 0-15
+Loom: 0-7
+
+Setup
+-----
+
+- Update paths in the Makefile.
 
 - build all relevant applications for end to end workload
 
@@ -100,6 +162,11 @@ $ make e2e-build
 Running Mach
 ------------
 
+- You need to run the two commands below concurrently (e.g., in separate
+  terminals). The first (make e2e-mach-app) receives data from the second (make
+  rocksdb-p1) so the first should be running and ready before running the
+  second.
+
 - Running the Mach application for RocksDB Phase 1. Note the paths in the
   makefile. To run phase 2, replace rocksdb-p1 with rocksdb-p2.
 
@@ -113,6 +180,11 @@ $ make rocksdb-p1 REPLAY_DURATION=800
 
 Running InfluxDB
 ----------------
+
+- You need to run the three commands below concurrently (e.g., in separate
+  terminals). The first (make influxd) is the InfluxDB daemon which receives data
+  from the second (make e2e-influx-app) which in turn, receives data from the
+  third (make rocksdb-p1). The commands should be run in this sequence.
 
 - For InfluxDB, you will also need to run the InfluxDB storage engine (in yet
   another terminal). You should kill and restart this process for every phase.
@@ -219,8 +291,9 @@ Probe Effects (Fig. 13)
 
 - The setup runs the RocksDB Phase 3 workload live. It writes and queries
   RocksDB instance and installs an eBPF probe collecting system calls and
-  page-cache events. Unlike in the replay workload used in the e2e
-  workload, this RocksDB instance in this workload writes to a ramdisk.
+  page-cache events so the Makefile runs these commands with sudo. Unlike in the
+  replay workload used in the e2e workload, this RocksDB instance in this
+  workload writes to a ramdisk.
 
 - The workload sends data to six end points:
 
@@ -251,8 +324,22 @@ $ sudo umount /tmp/ramdisk/
 
 - Update the RAMDISK_MOUNT path in the Makefile.
 
+eBPF
+----
+
+- This evaluation loads and attaches eBPF programs. We include a vmlinux.h file
+  in rocksdb-workload/src/bpf. This file works for our kernel version but may
+  not for yours. You can generate a vmlinux.h file for your kernel version:
+
+  $ bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
+
+- The Makefile uses sudo to load and install eBPF programs.
+
+Building
+--------
+
 - Build everything. Note that this links zlib so it rebuilds everything that was
-  previously built.
+  previously built (e.g., during the end to end evaluations).
 
 $ make pe-build
 
