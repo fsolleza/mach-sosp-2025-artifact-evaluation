@@ -47,8 +47,8 @@ RAMDISK_DIR:=$(RAMDISK_MOUNT)/data
 # Clean all data directories #
 ##############################
 clean-all:
-	rm -rf $(RAMDISK_DIR)
-	rm -rf $(TPM_DATA_DIR)
+	sudo rm -rf $(RAMDISK_DIR)
+	rm -rf $(TMP_DATA_DIR)
 
 ###################
 # Replay commands #
